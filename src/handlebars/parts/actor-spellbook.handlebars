@@ -1,100 +1,101 @@
 <div class="inventory-filters spellbook-filters flexrow">
-    <div class="form-group spellcasting-ability">
-        {{#unless isNPC}}
-        <label>{{stringify "Spellcasting"}}</label>
-        {{else}}
-        <label>{{stringify "Level"}}</label>
-        <input class="spellcasting-level" type="text" name="data.details.spellLevel"
-               value="{{data.details.spellLevel}}" data-dtype="Number" placeholder="0"/>
-        {{/unless}}
-        <select name="data.attributes.spellcasting" data-type="String">
-            {{#select data.attributes.spellcasting}}
-            <option value="">{{stringify "None"}}</option>
-            {{#each data.abilities as |abl a|}}
-            <option value="{{a}}">{{abl.label}}</option>
-            {{/each}}
-            {{/select}}
-        </select>
-    </div>
+  <div class="form-group spellcasting-ability">
+    {{#unless isNPC}}
+    <label>{{stringify "Spellcasting"}}</label>
+    {{else}}
+    <label>{{stringify "Level"}}</label>
+    <input class="spellcasting-level" type="text" name="data.details.spellLevel" value="{{data.details.spellLevel}}" placeholder="0" />
+    {{/unless}}
+    <select name="data.attributes.spellcasting">
+      {{#select data.attributes.spellcasting}}
+      <option value="">{{stringify "None"}}</option>
+      {{#each data.abilities as |abl a|}}
+      <option value="{{a}}">{{abl.label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </div>
 
-    <div class="prepared_spells">{{stringify "Prepared"}}{{#if preparedSpells}} ({{preparedSpells}}){{else}} (0){{/if}}</div>
+  <div class="prepared_spells">{{stringify "Prepared"}}{{#if preparedSpells}} ({{preparedSpells}}){{else}} (0){{/if}}
+  </div>
 </div>
 
 <ol class="inventory-list">
-{{#each spellbook as |section|}}
-    <li class="item flexrow inventory-header spellbook-header">
-        <div class="item-name flexrow">
-            <h3>{{section.label}}</h3>
-        </div>
+  {{#each spellbook as |section|}}
+  <li class="item flexrow inventory-header spellbook-header">
+    <div class="item-name flexrow">
+      <h3>{{section.label}}</h3>
+    </div>
 
-        <div class="spell-slots">
-            {{#if section.usesSlots}}
-            <input type="text" name="data.spells.{{section.prop}}.value" value="{{section.uses}}" placeholder="0"
-                   data-dtype="Number"/>
-            <span class="sep"> / </span>
-            <span class="spell-max" data-level="{{section.prop}}" data-slots="{{section.slots}}">
-                {{{section.slots}}}
-                {{#if ../editable}}
-                <a class="slot-max-override" title="{{stringify 'Override slots'}}">
-                    <i class="fas fa-edit"></i>
-                </a>
-                {{/if}}
-            {{ else }}
-            <span>{{{section.uses}}}</span>
-            <span class="sep"> / </span>
-            <span class="spell-max">{{{section.slots}}}</span>
-            {{/if}}
-        </div>
+    <div class="spell-slots">
+      {{#if section.usesSlots}}
+      <input type="text" name="data.spells.{{section.prop}}.value" value="{{section.uses}}" placeholder="0"/>
+      <span class="sep"> / </span>
+      <span class="spell-max">
+        {{{section.slots}}}
+        {{#if ../editable}}
+        <a class="slot-max-override" title="{{stringify 'Override slots'}}">
+          <i class="fas fa-edit"></i>
+        </a>
+        {{/if}}
+        {{ else }}
+        <span>{{{section.uses}}}</span>
+        <span class="sep"> / </span>
+        <span class="spell-max">{{{section.slots}}}</span>
+        {{/if}}
+    </div>
 
-        <div class="spell-school">{{stringify "Spell School"}}</div>
-        <div class="spell-action">{{stringify "Spell Usage"}}</div>
-        <div class="spell-target">{{stringify "Spell Target"}}</div>
+    <div class="spell-school">{{stringify "Spell School"}}</div>
+    <div class="spell-action">{{stringify "Spell Usage"}}</div>
+    <div class="spell-target">{{stringify "Spell Target"}}</div>
 
-        <div class="item-controls">
-            
-        </div>
-    </li>
+    <div class="item-controls">
 
-    <ol class="item-list">
+    </div>
+  </li>
+
+  <ol class="item-list">
     {{#each section.spells as |item i|}}
-        <li class="item flexrow" data-item-id="{{item._id}}">
-            <div class="item-name flexrow rollable">
-                <div class="item-image" style="background-image: url({{item.img}})"></div>
-                <h4>{{item.name}}</h4>
-                {{#if item.data.uses.per }}
-                <div class="item-detail spell-uses">Uses {{item.data.uses.value}} / {{item.data.uses.max}}</div>
-                {{/if}}
-            </div>
+    <li class="item flexrow">
+      <div class="item-name flexrow rollable">
+        <div class="item-image" style="background-image: url({{item.img}})"></div>
+        <h4>{{item.name}}</h4>
+        {{#if item.data.uses.per }}
+        <div class="item-detail spell-uses">Uses {{item.data.uses.value}} / {{item.data.uses.max}}</div>
+        {{/if}}
+      </div>
 
-            <div class="spell-comps">
-                {{#each labels.components}}
-                <span class="spell-component {{this}}">{{this}}</span>
-                {{/each}}
-            </div>
-            <div class="spell-school">{{labels.school}}</div>
-            <div class="spell-action">{{labels.activation}}</div>
-            <div class="spell-target" title="{{stringify 'Range'}}: {{labels.range}}">
-                {{#if labels.target}}
-                {{labels.target}}
-                {{else}}None
-                {{/if}}
-            </div>
+      <div class="spell-comps">
+        {{#each labels.components}}
+        <span class="spell-component {{this}}">{{this}}</span>
+        {{/each}}
+      </div>
+      <div class="spell-school">{{labels.school}}</div>
+      <div class="spell-action">{{labels.activation}}</div>
+      <div class="spell-target" title="{{stringify 'Range'}}: {{labels.range}}">
+        {{#if labels.target}}
+        {{labels.target}}
+        {{else}}None
+        {{/if}}
+      </div>
 
 
-            
-            <div class="item-controls">
-                {{#if section.canPrepare}}
-                <a class="item-control item-toggle {{item.toggleClass}}" title="{{item.toggleTitle}}"><i class="fas fa-sun"></i></a>
-                {{/if}}
-            </div>
-        </li>
-    {{/each}}
-    </ol>
-{{else}}
-    <li class="item flexrow inventory-header spellbook-header spellbook-empty">
-        <div class="item-controls">
-        </div>
+
+      <div class="item-controls">
+        {{#if section.canPrepare}}
+        <a class="item-control item-toggle {{item.toggleClass}}" title="{{item.toggleTitle}}"><i class="fas fa-sun"></i></a>
+        {{/if}}
+      </div>
     </li>
-    <li class="item flexrow"><p class="notes">{{stringify "This character has no spellcaster levels."}}</p></li>
-{{/each}}
+    {{/each}}
+  </ol>
+  {{else}}
+  <li class="item flexrow inventory-header spellbook-header spellbook-empty">
+    <div class="item-controls">
+    </div>
+  </li>
+  <li class="item flexrow">
+    <p class="notes">{{stringify "This character has no spellcaster levels."}}</p>
+  </li>
+  {{/each}}
 </ol>

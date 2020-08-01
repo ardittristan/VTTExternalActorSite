@@ -4539,13 +4539,13 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"experience flexrow\">\n                    <input name=\"data.details.xp.value\" type=\"text\" value=\""
+  return "        <div class=\"experience flexrow\">\n          <input name=\"data.details.xp.value\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"xp") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\"\n                           data-dtype=\"Number\" placeholder=\"0\"/>\n                    <span class=\"sep\">/</span>\n                    <span class=\"max\">"
+    + "\" data-dtype=\"Number\" placeholder=\"0\" />\n          <span class=\"sep\">/</span>\n          <span class=\"max\">"
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"xp") : stack1)) != null ? lookupProperty(stack1,"max") : stack1), depth0))
-    + "</span>\n                </div>\n                <div class=\"xpbar\">\n                    <span class=\"bar\" style=\"width: "
+    + "</span>\n        </div>\n        <div class=\"xpbar\">\n          <span class=\"bar\" style=\"width: "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"xp") : stack1)) != null ? lookupProperty(stack1,"pct") : stack1), depth0))
-    + "%\"></span>\n                </div>\n";
+    + "%\"></span>\n        </div>\n";
 },"3":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.lambda, alias3=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -4554,29 +4554,29 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <li class=\"ability "
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"proficient") : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":128,"column":35},"end":{"line":128,"column":78}}})) != null ? stack1 : "")
+  return "        <li class=\"ability "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"proficient") : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":119,"column":27},"end":{"line":119,"column":70}}})) != null ? stack1 : "")
     + "\" data-ability=\""
     + alias3(alias2(blockParams[0][1], depth0))
-    + "\">\n                    <h4 class=\"ability-name box-title rollable\">"
+    + "\">\n          <h4 class=\"ability-name box-title rollable\">"
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
-    + "</h4>\n                    <input class=\"ability-score\" name=\"data.abilities."
+    + "</h4>\n          <input class=\"ability-score\" name=\"data.abilities."
     + alias3(alias2(blockParams[0][1], depth0))
     + ".value\" type=\"text\" value=\""
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\" data-dtype=\"Number\" placeholder=\"10\"/>\n                    <div class=\"ability-modifiers flexrow\">\n                        <span class=\"ability-mod\" title=\"Modifier\">"
-    + alias3(__default(__webpack_require__(52)).call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"mod") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":132,"column":67},"end":{"line":132,"column":116}}}))
-    + "</span>\n                        <input type=\"hidden\" name=\"data.abilities."
+    + "\" data-dtype=\"Number\" placeholder=\"10\" />\n          <div class=\"ability-modifiers flexrow\">\n            <span class=\"ability-mod\" title=\"Modifier\">"
+    + alias3(__default(__webpack_require__(52)).call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"mod") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":123,"column":55},"end":{"line":123,"column":104}}}))
+    + "</span>\n            <input type=\"hidden\" name=\"data.abilities."
     + alias3(alias2(blockParams[0][1], depth0))
     + ".proficient\" value=\""
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"proficient") : stack1), depth0))
-    + "\" data-dtype=\"Number\"/>\n                        <a class=\"proficiency-toggle ability-proficiency\" title=\""
-    + alias3(__default(__webpack_require__(1)).call(alias1,"Proficiency",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":134,"column":81},"end":{"line":134,"column":110}}}))
+    + "\" data-dtype=\"Number\" />\n            <a class=\"proficiency-toggle ability-proficiency\" title=\""
+    + alias3(__default(__webpack_require__(1)).call(alias1,"Proficiency",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":125,"column":69},"end":{"line":125,"column":98}}}))
     + "\">"
     + ((stack1 = alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"icon") : stack1), depth0)) != null ? stack1 : "")
-    + "</a>\n                        <span class=\"ability-save\" title=\"Saving Throw\">"
-    + alias3(__default(__webpack_require__(52)).call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"save") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":135,"column":72},"end":{"line":135,"column":122}}}))
-    + "</span>\n                    </div>\n                </li>\n";
+    + "</a>\n            <span class=\"ability-save\" title=\"Saving Throw\">"
+    + alias3(__default(__webpack_require__(52)).call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"save") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":126,"column":60},"end":{"line":126,"column":110}}}))
+    + "</span>\n          </div>\n        </li>\n";
 },"4":function(container,depth0,helpers,partials,data) {
     return "proficient";
 },"6":function(container,depth0,helpers,partials,data,blockParams) {
@@ -4587,27 +4587,27 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <li class=\"skill flexrow "
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"value") : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":144,"column":41},"end":{"line":144,"column":77}}})) != null ? stack1 : "")
+  return "        <li class=\"skill flexrow "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"value") : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":135,"column":33},"end":{"line":135,"column":69}}})) != null ? stack1 : "")
     + "\" data-skill=\""
     + alias3(alias2(blockParams[0][1], depth0))
-    + "\">\n                    <input type=\"hidden\" name=\"data.skills."
+    + "\">\n          <input type=\"hidden\" name=\"data.skills."
     + alias3(alias2(blockParams[0][1], depth0))
     + ".value\" value=\""
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\" data-dtype=\"Number\"/>\n                    <a class=\"proficiency-toggle skill-proficiency\" title=\""
+    + "\" data-dtype=\"Number\" />\n          <a class=\"proficiency-toggle skill-proficiency\" title=\""
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"hover") : stack1), depth0))
     + "\">"
     + ((stack1 = alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"icon") : stack1), depth0)) != null ? stack1 : "")
-    + "</a>\n                    <h4 class=\"skill-name rollable\">"
+    + "</a>\n          <h4 class=\"skill-name rollable\">"
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
-    + "</h4>\n                    <span class=\"skill-ability\">"
+    + "</h4>\n          <span class=\"skill-ability\">"
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"ability") : stack1), depth0))
-    + "</span>\n                    <span class=\"skill-mod\">"
-    + alias3(__default(__webpack_require__(52)).call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"total") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":149,"column":44},"end":{"line":149,"column":93}}}))
-    + "</span>\n                    <span class=\"skill-passive\">("
+    + "</span>\n          <span class=\"skill-mod\">"
+    + alias3(__default(__webpack_require__(52)).call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"total") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":140,"column":34},"end":{"line":140,"column":83}}}))
+    + "</span>\n          <span class=\"skill-passive\">("
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"passive") : stack1), depth0))
-    + ")</span>\n                </li>\n";
+    + ")</span>\n        </li>\n";
 },"8":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -4616,33 +4616,33 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                    <li class=\"attribute resource\">\n                        <h4 class=\"attribute-name box-title\">\n                            <input name=\"data.resources."
+  return "          <li class=\"attribute resource\">\n            <h4 class=\"attribute-name box-title\">\n              <input name=\"data.resources."
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + ".label\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
-    + "\"\n                                   placeholder=\""
+    + "\" placeholder=\""
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"placeholder") : stack1), depth0))
-    + "\" />\n                        </h4>\n                        <div class=\"attribute-value\">\n                            <label class=\"recharge checkbox\">\n                                "
-    + alias2(__default(__webpack_require__(1)).call(alias3,"SR",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":167,"column":32},"end":{"line":167,"column":52}}}))
+    + "\" />\n            </h4>\n            <div class=\"attribute-value\">\n              <label class=\"recharge checkbox\"> "
+    + alias2(__default(__webpack_require__(1)).call(alias3,"SR",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":156,"column":48},"end":{"line":156,"column":68}}}))
     + " <input name=\"data.resources."
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + ".sr\" type=\"checkbox\" "
-    + alias2(__default(__webpack_require__(99)).call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"sr") : stack1),{"name":"checked","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":167,"column":114},"end":{"line":167,"column":132}}}))
-    + "/>\n                            </label>\n\n                            <input name=\"data.resources."
+    + alias2(__default(__webpack_require__(99)).call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"sr") : stack1),{"name":"checked","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":156,"column":130},"end":{"line":156,"column":148}}}))
+    + " /></label>\n\n              <input name=\"data.resources."
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + ".value\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\"\n                                   data-dtype=\"Number\" placeholder=\"0\"/>\n                            <span class=\"sep\"> / </span>\n                            <input name=\"data.resources."
+    + "\" data-dtype=\"Number\" placeholder=\"0\" />\n              <span class=\"sep\"> / </span>\n              <input name=\"data.resources."
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + ".max\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"max") : stack1), depth0))
-    + "\"\n                                  data-dtype=\"Number\" placeholder=\"0\"/>\n\n                            <label class=\"recharge checkbox\">\n                                "
-    + alias2(__default(__webpack_require__(1)).call(alias3,"LR",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":177,"column":32},"end":{"line":177,"column":52}}}))
+    + "\" data-dtype=\"Number\" placeholder=\"0\" />\n\n              <label class=\"recharge checkbox\"> "
+    + alias2(__default(__webpack_require__(1)).call(alias3,"LR",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":162,"column":48},"end":{"line":162,"column":68}}}))
     + " <input name=\"data.resources."
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + ".lr\" type=\"checkbox\" "
-    + alias2(__default(__webpack_require__(99)).call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"lr") : stack1),{"name":"checked","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":177,"column":114},"end":{"line":177,"column":132}}}))
-    + "/>\n                            </label>\n                        </div>\n                    </li>\n";
+    + alias2(__default(__webpack_require__(99)).call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"lr") : stack1),{"name":"checked","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":162,"column":130},"end":{"line":162,"column":148}}}))
+    + " /></label>\n            </div>\n          </li>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -4651,127 +4651,127 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<form class=\"flexcol\" autocomplete=\"off\">\n\n    <header class=\"sheet-header flexrow\">\n        <img class=\"profile\" src=\""
+  return "<form class=\"flexcol\" autocomplete=\"off\">\n\n  <header class=\"sheet-header flexrow\">\n    <img class=\"profile\" src=\""
     + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"actor") : depth0)) != null ? lookupProperty(stack1,"img") : stack1), depth0))
     + "\" title=\""
     + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"actor") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
-    + "\" data-edit=\"img\"/>\n\n        <section class=\"header-details flexrow\">\n            <h1 class=\"charname\">\n                <input name=\"name\" type=\"text\" value=\""
+    + "\" data-edit=\"img\" />\n\n    <section class=\"header-details flexrow\">\n      <h1 class=\"charname\">\n        <input name=\"name\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"actor") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + "\" placeholder=\""
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Name",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":9,"column":83},"end":{"line":9,"column":105}}}))
-    + "\"/>\n            </h1>\n\n            <aside class=\"header-exp flexcol\">\n                <div class=\"charlevel\">\n                    <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Level",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":14,"column":27},"end":{"line":14,"column":50}}}))
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Name",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":9,"column":75},"end":{"line":9,"column":97}}}))
+    + "\" />\n      </h1>\n\n      <aside class=\"header-exp flexcol\">\n        <div class=\"charlevel\">\n          <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Level",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":14,"column":17},"end":{"line":14,"column":40}}}))
     + " "
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"level") : stack1), depth0))
-    + "</label>\n                    <span class=\"levels\">"
+    + "</label>\n          <span class=\"levels\">"
     + alias2(alias1((depth0 != null ? lookupProperty(depth0,"classLabels") : depth0), depth0))
-    + "</span>\n                </div>\n\n"
-    + ((stack1 = lookupProperty(helpers,"unless").call(alias3,(depth0 != null ? lookupProperty(depth0,"disableExperience") : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":18,"column":16},"end":{"line":28,"column":27}}})) != null ? stack1 : "")
-    + "            </aside>\n\n            <ul class=\"summary flexrow\">\n                <li>\n                    <input type=\"text\" name=\"data.details.race\" value=\""
+    + "</span>\n        </div>\n\n"
+    + ((stack1 = lookupProperty(helpers,"unless").call(alias3,(depth0 != null ? lookupProperty(depth0,"disableExperience") : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":18,"column":8},"end":{"line":27,"column":19}}})) != null ? stack1 : "")
+    + "      </aside>\n\n      <ul class=\"summary flexrow\">\n        <li>\n          <input type=\"text\" name=\"data.details.race\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"race") : stack1), depth0))
     + "\" placeholder=\""
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Race",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":34,"column":107},"end":{"line":34,"column":129}}}))
-    + "\"/>\n                </li>\n                <li>\n                    <input type=\"text\" name=\"data.details.background\" value=\""
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Race",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":33,"column":97},"end":{"line":33,"column":119}}}))
+    + "\" />\n        </li>\n        <li>\n          <input type=\"text\" name=\"data.details.background\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"background") : stack1), depth0))
     + "\" placeholder=\""
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Background",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":37,"column":119},"end":{"line":37,"column":147}}}))
-    + "\"/>\n                </li>\n                <li>\n                    <input type=\"text\" name=\"data.details.alignment\" value=\""
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Background",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":36,"column":109},"end":{"line":36,"column":137}}}))
+    + "\" />\n        </li>\n        <li>\n          <input type=\"text\" name=\"data.details.alignment\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"alignment") : stack1), depth0))
     + "\" placeholder=\""
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Alignment",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":40,"column":117},"end":{"line":40,"column":144}}}))
-    + "\"/>\n                </li>\n                <li class=\"proficiency\">\n                    <span>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Proficiency",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":43,"column":26},"end":{"line":43,"column":55}}}))
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Alignment",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":39,"column":107},"end":{"line":39,"column":134}}}))
+    + "\" />\n        </li>\n        <li class=\"proficiency\">\n          <span>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Proficiency",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":42,"column":16},"end":{"line":42,"column":45}}}))
     + " "
-    + alias2(__default(__webpack_require__(52)).call(alias3,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"prof") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":43,"column":56},"end":{"line":43,"column":114}}}))
-    + "</span>\n                </li>\n            </ul>\n\n            <ul class=\"attributes flexrow\">\n                <li class=\"attribute health\">\n                    <h4 class=\"attribute-name box-title\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Health",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":50,"column":57},"end":{"line":50,"column":81}}}))
-    + "</h4>\n                    <div class=\"attribute-value multiple\">\n                        <input name=\"data.attributes.hp.value\" type=\"text\" value=\""
+    + alias2(__default(__webpack_require__(52)).call(alias3,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"prof") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":42,"column":46},"end":{"line":42,"column":104}}}))
+    + "</span>\n        </li>\n      </ul>\n\n      <ul class=\"attributes flexrow\">\n        <li class=\"attribute health\">\n          <h4 class=\"attribute-name box-title\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Health",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":49,"column":47},"end":{"line":49,"column":71}}}))
+    + "</h4>\n          <div class=\"attribute-value multiple\">\n            <input name=\"data.attributes.hp.value\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hp") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\"\n                               data-dtype=\"Number\" placeholder=\"10\"/>\n                        <span class=\"sep\"> / </span>\n                        <input name=\"data.attributes.hp.max\" type=\"text\" value=\""
+    + "\" data-dtype=\"Number\" placeholder=\"10\" />\n            <span class=\"sep\"> / </span>\n            <input name=\"data.attributes.hp.max\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hp") : stack1)) != null ? lookupProperty(stack1,"max") : stack1), depth0))
-    + "\"\n                               data-dtype=\"Number\" placeholder=\"10\"/>\n                    </div>\n                    <footer class=\"attribute-footer\">\n                        <input name=\"data.attributes.hp.temp\" type=\"text\" class=\"temphp\" placeholder=\"+"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Temp",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":59,"column":103},"end":{"line":59,"column":125}}}))
-    + "\"\n                               value=\""
+    + "\" data-dtype=\"Number\" placeholder=\"10\" />\n          </div>\n          <footer class=\"attribute-footer\">\n            <input name=\"data.attributes.hp.temp\" type=\"text\" class=\"temphp\" placeholder=\"+"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Temp",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":56,"column":91},"end":{"line":56,"column":113}}}))
+    + "\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hp") : stack1)) != null ? lookupProperty(stack1,"temp") : stack1), depth0))
     + "\" data-dtype=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hp") : stack1)) != null ? lookupProperty(stack1,"type") : stack1), depth0))
-    + "\"/>\n                        <input name=\"data.attributes.hp.tempmax\" type=\"text\" class=\"temphp\" placeholder=\"+"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Max",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":61,"column":106},"end":{"line":61,"column":127}}}))
-    + "\"\n                               value=\""
+    + "\" />\n            <input name=\"data.attributes.hp.tempmax\" type=\"text\" class=\"temphp\" placeholder=\"+"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Max",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":57,"column":94},"end":{"line":57,"column":115}}}))
+    + "\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hp") : stack1)) != null ? lookupProperty(stack1,"tempmax") : stack1), depth0))
     + "\" data-dtype=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hp") : stack1)) != null ? lookupProperty(stack1,"type") : stack1), depth0))
-    + "\"/>\n                    </footer>\n                </li>\n\n                <li class=\"attribute\">\n                    <h4 class=\"attribute-name box-title\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Hit Dice",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":67,"column":57},"end":{"line":67,"column":83}}}))
-    + "</h4>\n                    <div class=\"attribute-value multiple\">\n                        <label class=\"hit-dice\">"
+    + "\" />\n          </footer>\n        </li>\n\n        <li class=\"attribute\">\n          <h4 class=\"attribute-name box-title\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Hit Dice",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":62,"column":47},"end":{"line":62,"column":73}}}))
+    + "</h4>\n          <div class=\"attribute-value multiple\">\n            <label class=\"hit-dice\">"
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"hd") : stack1), depth0))
     + " <span class=\"sep\"> / </span> "
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"level") : stack1), depth0))
-    + "</label>\n                    </div>\n                </li>\n\n                <li class=\"attribute\">\n                    <h4 class=\"attribute-name box-title\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Armor Class",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":74,"column":57},"end":{"line":74,"column":86}}}))
-    + "</h4>\n                    <div class=\"attribute-value\">\n                        <input name=\"data.attributes.ac.value\" type=\"text\" value=\""
+    + "</label>\n          </div>\n        </li>\n\n        <li class=\"attribute\">\n          <h4 class=\"attribute-name box-title\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Armor Class",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":69,"column":47},"end":{"line":69,"column":76}}}))
+    + "</h4>\n          <div class=\"attribute-value\">\n            <input name=\"data.attributes.ac.value\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"ac") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\"\n                               data-dtype=\"Number\" placeholder=\"10\"/>\n                    </div>\n                    <footer class=\"attribute-footer\">\n                        <span class=\"spell-dc\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Spell DC",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":80,"column":47},"end":{"line":80,"column":71}}}))
+    + "\" data-dtype=\"Number\" placeholder=\"10\" />\n          </div>\n          <footer class=\"attribute-footer\">\n            <span class=\"spell-dc\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Spell DC",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":74,"column":35},"end":{"line":74,"column":59}}}))
     + " "
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"spelldc") : stack1), depth0))
-    + "</span>\n                    </footer>\n                </li>\n\n                <li class=\"attribute\">\n                    <h4 class=\"attribute-name box-title\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Speed",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":85,"column":57},"end":{"line":85,"column":80}}}))
-    + "</h4>\n                    <div class=\"attribute-value\">\n                        <input name=\"data.attributes.speed.value\" type=\"text\"\n                               value=\""
+    + "</span>\n          </footer>\n        </li>\n\n        <li class=\"attribute\">\n          <h4 class=\"attribute-name box-title\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Speed",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":79,"column":47},"end":{"line":79,"column":70}}}))
+    + "</h4>\n          <div class=\"attribute-value\">\n            <input name=\"data.attributes.speed.value\" type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"speed") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\" placeholder=\"0\"/>\n                    </div>\n                    <footer class=\"attribute-footer\">\n                        <input type=\"text\" class=\"speed\" name=\"data.attributes.speed.special\"\n                               value=\""
+    + "\" placeholder=\"0\" />\n          </div>\n          <footer class=\"attribute-footer\">\n            <input type=\"text\" class=\"speed\" name=\"data.attributes.speed.special\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"speed") : stack1)) != null ? lookupProperty(stack1,"special") : stack1), depth0))
     + "\" placeholder=\""
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Special Movement",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":92,"column":86},"end":{"line":92,"column":120}}}))
-    + "\"/>\n                    </footer>\n                </li>\n\n                <li class=\"attribute initiative\">\n                    <h4 class=\"attribute-name box-title\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Initiative",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":97,"column":57},"end":{"line":97,"column":85}}}))
-    + "</h4>\n                    <div class=\"attribute-value\">\n                        <span>"
-    + alias2(__default(__webpack_require__(52)).call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"init") : stack1)) != null ? lookupProperty(stack1,"total") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":99,"column":30},"end":{"line":99,"column":94}}}))
-    + "</span>\n                    </div>\n                    <footer class=\"attribute-footer\">\n                        <span>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Modifier",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":102,"column":30},"end":{"line":102,"column":56}}}))
-    + "</span>\n                        <input name=\"data.attributes.init.value\" type=\"text\" placeholder=\"0\" data-dtype=\"Number\"\n                               value=\""
-    + alias2(__default(__webpack_require__(52)).call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"init") : stack1)) != null ? lookupProperty(stack1,"value") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":104,"column":38},"end":{"line":104,"column":102}}}))
-    + "\"/>\n                    </footer>\n                </li>\n            </ul>\n        </section>\n    </header>\n\n    <nav class=\"sheet-navigation tabs\" data-group=\"primary\">\n        <a class=\"item active\" data-tab=\"attributes\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Attributes",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":113,"column":53},"end":{"line":113,"column":81}}}))
-    + "</a>\n        <a class=\"item\" data-tab=\"inventory\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Inventory",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":114,"column":45},"end":{"line":114,"column":72}}}))
-    + "</a>\n        <a class=\"item\" data-tab=\"features\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Features",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":115,"column":44},"end":{"line":115,"column":70}}}))
-    + "</a>\n        <a class=\"item\" data-tab=\"spellbook\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Spellbook",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":116,"column":45},"end":{"line":116,"column":72}}}))
-    + "</a>\n        <a class=\"item\" data-tab=\"biography\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Biography",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":117,"column":45},"end":{"line":117,"column":72}}}))
-    + "</a>\n    </nav>\n\n    <section class=\"sheet-body\">\n\n        <div class=\"tab attributes flexrow\" data-group=\"primary\" data-tab=\"attributes\">\n\n            <ul class=\"ability-scores flexrow\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"abilities") : stack1),{"name":"each","hash":{},"fn":container.program(3, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":127,"column":12},"end":{"line":138,"column":21}}})) != null ? stack1 : "")
-    + "            </ul>\n\n            <ul class=\"skills-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"skills") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":143,"column":12},"end":{"line":152,"column":21}}})) != null ? stack1 : "")
-    + "            </ul>\n\n            <section class=\"center-pane flexcol\">\n\n                <ul class=\"attributes flexrow\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,(depth0 != null ? lookupProperty(depth0,"resources") : depth0),{"name":"each","hash":{},"fn":container.program(8, data, 1, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":159,"column":20},"end":{"line":181,"column":29}}})) != null ? stack1 : "")
-    + "                </ul>\n\n                <div class=\"counters\">\n                    <div class=\"counter flexrow death-saves\">\n                        <h4 class=\"death-save rollable\">"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Death Saves",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":187,"column":56},"end":{"line":187,"column":85}}}))
-    + "</h4>\n                        <div class=\"counter-value\">\n                            <i class=\"fas fa-check\"></i>\n                            <input type=\"text\" name=\"data.attributes.death.success\" data-dtype=\"Number\" placeholder=\"0\"\n                                   value=\""
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Special Movement",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":84,"column":137},"end":{"line":84,"column":171}}}))
+    + "\" />\n          </footer>\n        </li>\n\n        <li class=\"attribute initiative\">\n          <h4 class=\"attribute-name box-title\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Initiative",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":89,"column":47},"end":{"line":89,"column":75}}}))
+    + "</h4>\n          <div class=\"attribute-value\">\n            <span>"
+    + alias2(__default(__webpack_require__(52)).call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"init") : stack1)) != null ? lookupProperty(stack1,"total") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":91,"column":18},"end":{"line":91,"column":82}}}))
+    + "</span>\n          </div>\n          <footer class=\"attribute-footer\">\n            <span>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Modifier",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":94,"column":18},"end":{"line":94,"column":44}}}))
+    + "</span>\n            <input name=\"data.attributes.init.value\" type=\"text\" placeholder=\"0\" data-dtype=\"Number\" value=\""
+    + alias2(__default(__webpack_require__(52)).call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"init") : stack1)) != null ? lookupProperty(stack1,"value") : stack1),{"name":"numberFormat","hash":{"sign":true,"decimals":0},"data":data,"blockParams":blockParams,"loc":{"start":{"line":95,"column":108},"end":{"line":95,"column":172}}}))
+    + "\" />\n          </footer>\n        </li>\n      </ul>\n    </section>\n  </header>\n\n  <nav class=\"sheet-navigation tabs\" data-group=\"primary\">\n    <a class=\"item active\" data-tab=\"attributes\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Attributes",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":104,"column":49},"end":{"line":104,"column":77}}}))
+    + "</a>\n    <a class=\"item\" data-tab=\"inventory\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Inventory",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":105,"column":41},"end":{"line":105,"column":68}}}))
+    + "</a>\n    <a class=\"item\" data-tab=\"features\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Features",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":106,"column":40},"end":{"line":106,"column":66}}}))
+    + "</a>\n    <a class=\"item\" data-tab=\"spellbook\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Spellbook",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":107,"column":41},"end":{"line":107,"column":68}}}))
+    + "</a>\n    <a class=\"item\" data-tab=\"biography\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Biography",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":108,"column":41},"end":{"line":108,"column":68}}}))
+    + "</a>\n  </nav>\n\n  <section class=\"sheet-body\">\n\n    <div class=\"tab attributes flexrow\" data-group=\"primary\" data-tab=\"attributes\">\n\n      <ul class=\"ability-scores flexrow\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"abilities") : stack1),{"name":"each","hash":{},"fn":container.program(3, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":118,"column":8},"end":{"line":129,"column":17}}})) != null ? stack1 : "")
+    + "      </ul>\n\n      <ul class=\"skills-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"skills") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":134,"column":8},"end":{"line":143,"column":17}}})) != null ? stack1 : "")
+    + "      </ul>\n\n      <section class=\"center-pane flexcol\">\n\n        <ul class=\"attributes flexrow\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,(depth0 != null ? lookupProperty(depth0,"resources") : depth0),{"name":"each","hash":{},"fn":container.program(8, data, 1, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":150,"column":10},"end":{"line":165,"column":19}}})) != null ? stack1 : "")
+    + "        </ul>\n\n        <div class=\"counters\">\n          <div class=\"counter flexrow death-saves\">\n            <h4 class=\"death-save rollable\">"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Death Saves",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":171,"column":44},"end":{"line":171,"column":73}}}))
+    + "</h4>\n            <div class=\"counter-value\">\n              <i class=\"fas fa-check\"></i>\n              <input type=\"text\" name=\"data.attributes.death.success\" data-dtype=\"Number\" placeholder=\"0\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"death") : stack1)) != null ? lookupProperty(stack1,"success") : stack1), depth0))
-    + "\"/>\n                            <i class=\"fas fa-times\"></i>\n                            <input type=\"text\" name=\"data.attributes.death.failure\" data-dtype=\"Number\" placeholder=\"0\"\n                                   value=\""
+    + "\" />\n              <i class=\"fas fa-times\"></i>\n              <input type=\"text\" name=\"data.attributes.death.failure\" data-dtype=\"Number\" placeholder=\"0\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"death") : stack1)) != null ? lookupProperty(stack1,"failure") : stack1), depth0))
-    + "\"/>\n                        </div>\n                    </div>\n                    <div class=\"counter flexrow exhaustion\">\n                        <h4>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Exhaustion",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":198,"column":28},"end":{"line":198,"column":56}}}))
-    + "</h4>\n                        <div class=\"counter-value\">\n                            <input type=\"text\" name=\"data.attributes.exhaustion\" data-dtype=\"Number\" placeholder=\"0\"\n                                   value=\""
+    + "\" />\n            </div>\n          </div>\n          <div class=\"counter flexrow exhaustion\">\n            <h4>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Exhaustion",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":180,"column":16},"end":{"line":180,"column":44}}}))
+    + "</h4>\n            <div class=\"counter-value\">\n              <input type=\"text\" name=\"data.attributes.exhaustion\" data-dtype=\"Number\" placeholder=\"0\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"exhaustion") : stack1), depth0))
-    + "\" />\n                        </div>\n                    </div>\n                    <div class=\"counter flexrow inspiration\">\n                        <h4>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Inspiration",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":205,"column":28},"end":{"line":205,"column":57}}}))
-    + "</h4>\n                        <div class=\"counter-value\">\n                            <input type=\"checkbox\" name=\"data.attributes.inspiration\" data-dtype=\"Boolean\"\n                                   "
-    + alias2(__default(__webpack_require__(99)).call(alias3,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"inspiration") : stack1),{"name":"checked","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":208,"column":35},"end":{"line":208,"column":74}}}))
-    + "/>\n                        </div>\n                    </div>\n                </div>\n\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(364),depth0,{"name":"parts/actor-traits","data":data,"blockParams":blockParams,"indent":"                ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "            </section>\n        </div>\n\n        <div class=\"tab inventory flexcol\" data-group=\"primary\" data-tab=\"inventory\">\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(365),depth0,{"name":"parts/actor-inventory","hash":{"sections":(depth0 != null ? lookupProperty(depth0,"inventory") : depth0)},"data":data,"blockParams":blockParams,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "        </div>\n\n        <div class=\"tab features flexcol\" data-group=\"primary\" data-tab=\"features\">\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(366),depth0,{"name":"parts/actor-features","hash":{"sections":(depth0 != null ? lookupProperty(depth0,"features") : depth0)},"data":data,"blockParams":blockParams,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "        </div>\n\n        <div class=\"tab spellbook flexcol\" data-group=\"primary\" data-tab=\"spellbook\">\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(367),depth0,{"name":"parts/actor-spellbook","data":data,"blockParams":blockParams,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "        </div>\n\n        <div class=\"tab biography flexcol\" data-group=\"primary\" data-tab=\"biography\">\n"
-    + ((stack1 = container.invokePartial(__webpack_require__(368),depth0,{"name":"parts/actor-biography","hash":{"sections":((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"biography") : stack1)},"data":data,"blockParams":blockParams,"indent":"            ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "        </div>\n    </section>\n</form>\n";
+    + "\" />\n            </div>\n          </div>\n          <div class=\"counter flexrow inspiration\">\n            <h4>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Inspiration",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":186,"column":16},"end":{"line":186,"column":45}}}))
+    + "</h4>\n            <div class=\"counter-value\">\n              <input type=\"checkbox\" name=\"data.attributes.inspiration\" data-dtype=\"Boolean\"\n                "
+    + alias2(__default(__webpack_require__(99)).call(alias3,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"inspiration") : stack1),{"name":"checked","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":189,"column":16},"end":{"line":189,"column":55}}}))
+    + " />\n            </div>\n          </div>\n        </div>\n\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(364),depth0,{"name":"parts/actor-traits","data":data,"blockParams":blockParams,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "      </section>\n    </div>\n\n    <div class=\"tab inventory flexcol\" data-group=\"primary\" data-tab=\"inventory\">\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(365),depth0,{"name":"parts/actor-inventory","hash":{"sections":(depth0 != null ? lookupProperty(depth0,"inventory") : depth0)},"data":data,"blockParams":blockParams,"indent":"      ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    </div>\n\n    <div class=\"tab features flexcol\" data-group=\"primary\" data-tab=\"features\">\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(366),depth0,{"name":"parts/actor-features","hash":{"sections":(depth0 != null ? lookupProperty(depth0,"features") : depth0)},"data":data,"blockParams":blockParams,"indent":"      ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    </div>\n\n    <div class=\"tab spellbook flexcol\" data-group=\"primary\" data-tab=\"spellbook\">\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(367),depth0,{"name":"parts/actor-spellbook","data":data,"blockParams":blockParams,"indent":"      ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    </div>\n\n    <div class=\"tab biography flexcol\" data-group=\"primary\" data-tab=\"biography\">\n"
+    + ((stack1 = container.invokePartial(__webpack_require__(368),depth0,{"name":"parts/actor-biography","hash":{"sections":((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"biography") : stack1)},"data":data,"blockParams":blockParams,"indent":"      ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    </div>\n  </section>\n</form>\n";
 },"usePartial":true,"useData":true,"useBlockParams":true});
 
 /***/ }),
@@ -11405,11 +11405,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"actorSizes") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":6,"column":12},"end":{"line":8,"column":21}}})) != null ? stack1 : "");
+  return ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"actorSizes") : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":6,"column":6},"end":{"line":8,"column":15}}})) != null ? stack1 : "");
 },"2":function(container,depth0,helpers,partials,data,blockParams) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "                <option value=\""
+  return "        <option value=\""
     + alias2(alias1(blockParams[0][1], depth0))
     + "\">"
     + alias2(alias1(blockParams[0][0], depth0))
@@ -11419,7 +11419,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"6":function(container,depth0,helpers,partials,data,blockParams) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "            <li class=\"tag "
+  return "      <li class=\"tag "
     + alias2(alias1(blockParams[0][1], depth0))
     + "\">"
     + alias2(alias1(blockParams[0][0], depth0))
@@ -11432,25 +11432,25 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "    <div class=\"form-group "
+  return "  <div class=\"form-group "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"weaponProf") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Weapon Proficiencies",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":80,"column":15},"end":{"line":80,"column":51}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"weaponProficiencies\" data-target=\"data.traits.weaponProf\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"weaponProf") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":85,"column":8},"end":{"line":87,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n    <div class=\"form-group "
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Weapon Proficiencies",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":80,"column":11},"end":{"line":80,"column":47}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"weaponProf") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":85,"column":4},"end":{"line":87,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"armorProf") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Armor Proficiencies",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":92,"column":15},"end":{"line":92,"column":50}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"armorProficiencies\" data-target=\"data.traits.armorProf\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"armorProf") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":97,"column":8},"end":{"line":99,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n    <div class=\"form-group "
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Armor Proficiencies",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":92,"column":11},"end":{"line":92,"column":46}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"armorProf") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":97,"column":4},"end":{"line":99,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"toolProf") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Tool Proficiencies",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":104,"column":15},"end":{"line":104,"column":49}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"toolProficiencies\" data-target=\"data.traits.toolProf\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"toolProf") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":109,"column":8},"end":{"line":111,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n";
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Tool Proficiencies",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":104,"column":11},"end":{"line":104,"column":45}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"toolProf") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":109,"column":4},"end":{"line":111,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.escapeExpression, alias3=container.lambda, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11459,53 +11459,53 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<div class=\"traits\">\n    <div class=\"form-group\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Size",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":3,"column":15},"end":{"line":3,"column":35}}}))
-    + "</label>\n        <select class=\"actor-size\" name=\"data.traits.size\">\n"
-    + ((stack1 = __default(__webpack_require__(140)).call(alias1,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"size") : stack1),{"name":"select","hash":{},"fn":container.program(1, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":5,"column":12},"end":{"line":9,"column":23}}})) != null ? stack1 : "")
-    + "        </select>\n    </div>\n\n    <div class=\"form-group "
-    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"senses") : stack1),{"name":"unless","hash":{},"fn":container.program(4, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":13,"column":27},"end":{"line":13,"column":76}}})) != null ? stack1 : "")
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Senses",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":14,"column":15},"end":{"line":14,"column":37}}}))
-    + "</label>\n        <input type=\"text\" name=\"data.traits.senses\" value=\""
+  return "<div class=\"traits\">\n  <div class=\"form-group\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Size",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":3,"column":11},"end":{"line":3,"column":31}}}))
+    + "</label>\n    <select class=\"actor-size\" name=\"data.traits.size\">\n"
+    + ((stack1 = __default(__webpack_require__(140)).call(alias1,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"size") : stack1),{"name":"select","hash":{},"fn":container.program(1, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":5,"column":6},"end":{"line":9,"column":17}}})) != null ? stack1 : "")
+    + "    </select>\n  </div>\n\n  <div class=\"form-group "
+    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"senses") : stack1),{"name":"unless","hash":{},"fn":container.program(4, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":13,"column":25},"end":{"line":13,"column":74}}})) != null ? stack1 : "")
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Senses",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":14,"column":11},"end":{"line":14,"column":33}}}))
+    + "</label>\n    <input type=\"text\" name=\"data.traits.senses\" value=\""
     + alias2(alias3(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"senses") : stack1), depth0))
     + "\" placeholder=\""
-    + alias2(__default(__webpack_require__(1)).call(alias1,"None",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":15,"column":97},"end":{"line":15,"column":119}}}))
-    + "\"/>\n    </div>\n\n    <div class=\"form-group "
+    + alias2(__default(__webpack_require__(1)).call(alias1,"None",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":15,"column":93},"end":{"line":15,"column":115}}}))
+    + "\"/>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias3(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"languages") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Languages",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":19,"column":15},"end":{"line":19,"column":40}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"languages\" data-target=\"data.traits.languages\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"languages") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":24,"column":8},"end":{"line":26,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n    <div class=\"form-group "
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Languages",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":19,"column":11},"end":{"line":19,"column":36}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"languages") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":24,"column":4},"end":{"line":26,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias3(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"di") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Damage Immunities",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":31,"column":15},"end":{"line":31,"column":48}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"damageTypes\" data-target=\"data.traits.di\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"di") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":36,"column":8},"end":{"line":38,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n    <div class=\"form-group "
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Damage Immunities",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":31,"column":11},"end":{"line":31,"column":44}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"di") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":36,"column":4},"end":{"line":38,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias3(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"dr") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Damage Resistances",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":43,"column":15},"end":{"line":43,"column":49}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"damageTypes\" data-target=\"data.traits.dr\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"dr") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":48,"column":8},"end":{"line":50,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n    <div class=\"form-group "
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Damage Resistances",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":43,"column":11},"end":{"line":43,"column":45}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"dr") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":48,"column":4},"end":{"line":50,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias3(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"dv") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Damage Vulnerabilities",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":55,"column":15},"end":{"line":55,"column":53}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"damageTypes\" data-target=\"data.traits.dv\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"dv") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":60,"column":8},"end":{"line":62,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n    <div class=\"form-group "
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Damage Vulnerabilities",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":55,"column":11},"end":{"line":55,"column":49}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"dv") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":60,"column":4},"end":{"line":62,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n  <div class=\"form-group "
     + alias2(alias3(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"ci") : stack1)) != null ? lookupProperty(stack1,"cssClass") : stack1), depth0))
-    + "\">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Condition Immunities",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":67,"column":15},"end":{"line":67,"column":51}}}))
-    + "</label>\n        <a class=\"trait-selector\" data-options=\"conditionTypes\" data-target=\"data.traits.ci\">\n            \n        </a>\n        <ul class=\"traits-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"ci") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":72,"column":8},"end":{"line":74,"column":17}}})) != null ? stack1 : "")
-    + "        </ul>\n    </div>\n\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"isCharacter") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":78,"column":4},"end":{"line":114,"column":11}}})) != null ? stack1 : "")
-    + "\n    <div class=\"form-group \">\n        <label>"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Special Traits",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":117,"column":15},"end":{"line":117,"column":45}}}))
-    + "</label>\n    </div>\n</div>";
+    + "\">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Condition Immunities",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":67,"column":11},"end":{"line":67,"column":47}}}))
+    + "</label>\n    <a class=\"trait-selector\">\n\n    </a>\n    <ul class=\"traits-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"traits") : stack1)) != null ? lookupProperty(stack1,"ci") : stack1)) != null ? lookupProperty(stack1,"selected") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":72,"column":4},"end":{"line":74,"column":13}}})) != null ? stack1 : "")
+    + "    </ul>\n  </div>\n\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"isCharacter") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":78,"column":2},"end":{"line":114,"column":9}}})) != null ? stack1 : "")
+    + "\n  <div class=\"form-group \">\n    <label>"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Special Traits",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":117,"column":11},"end":{"line":117,"column":41}}}))
+    + "</label>\n  </div>\n</div>";
 },"useData":true,"useBlockParams":true});
 
 /***/ }),
@@ -11522,15 +11522,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <label class=\"denomination "
+  return "    <label class=\"denomination "
     + alias2(alias1(blockParams[0][1], depth0))
     + "\">"
-    + alias2(lookupProperty(helpers,"lookup").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depths[1] != null ? lookupProperty(depths[1],"config") : depths[1])) != null ? lookupProperty(stack1,"currencies") : stack1),blockParams[0][1],{"name":"lookup","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":10,"column":42},"end":{"line":10,"column":77}}}))
-    + "</label>\n        <input type=\"text\" name=\"data.currency."
+    + alias2(lookupProperty(helpers,"lookup").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depths[1] != null ? lookupProperty(depths[1],"config") : depths[1])) != null ? lookupProperty(stack1,"currencies") : stack1),blockParams[0][1],{"name":"lookup","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":10,"column":38},"end":{"line":10,"column":73}}}))
+    + "</label>\n    <input type=\"text\" name=\"data.currency."
     + alias2(alias1(blockParams[0][1], depth0))
     + "\" value=\""
     + alias2(alias1(blockParams[0][0], depth0))
-    + "\" data-dtype=\"Number\"/>\n";
+    + "\"/>\n";
 },"3":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11539,34 +11539,22 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "    <li class=\"inventory-header flexrow\">\n        <h3 class=\"item-name flexrow\">"
+  return "  <li class=\"inventory-header flexrow\">\n    <h3 class=\"item-name flexrow\">"
     + alias1(container.lambda(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
     + "</h3>\n\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias2,(depths[1] != null ? lookupProperty(depths[1],"isCharacter") : depths[1]),{"name":"if","hash":{},"fn":container.program(4, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":23,"column":8},"end":{"line":25,"column":15}}})) != null ? stack1 : "")
-    + "\n        <div class=\"item-detail item-uses\">"
-    + alias1(__default(__webpack_require__(1)).call(alias2,"Charges",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":27,"column":43},"end":{"line":27,"column":66}}}))
-    + "</div>\n        <div class=\"item-detail item-action\">"
-    + alias1(__default(__webpack_require__(1)).call(alias2,"Usage",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":28,"column":45},"end":{"line":28,"column":66}}}))
-    + "</div>\n\n        <div class=\"item-controls\">\n            <a class=\"item-control item-create\" title='"
-    + alias1(__default(__webpack_require__(1)).call(alias2,"Create Item",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":31,"column":55},"end":{"line":31,"column":82}}}))
-    + "' "
-    + ((stack1 = lookupProperty(helpers,"each").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"dataset") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":31,"column":84},"end":{"line":31,"column":145}}})) != null ? stack1 : "")
-    + ">\n                \n            </a>\n        </div>\n    </li>\n\n    <ol class=\"item-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"items") : stack1),{"name":"each","hash":{},"fn":container.program(8, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":38,"column":4},"end":{"line":76,"column":13}}})) != null ? stack1 : "")
-    + "    </ol>\n";
+    + ((stack1 = lookupProperty(helpers,"if").call(alias2,(depths[1] != null ? lookupProperty(depths[1],"isCharacter") : depths[1]),{"name":"if","hash":{},"fn":container.program(4, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":23,"column":4},"end":{"line":25,"column":11}}})) != null ? stack1 : "")
+    + "\n    <div class=\"item-detail item-uses\">"
+    + alias1(__default(__webpack_require__(1)).call(alias2,"Charges",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":27,"column":39},"end":{"line":27,"column":62}}}))
+    + "</div>\n    <div class=\"item-detail item-action\">"
+    + alias1(__default(__webpack_require__(1)).call(alias2,"Usage",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":28,"column":41},"end":{"line":28,"column":62}}}))
+    + "</div>\n\n  </li>\n\n  <ol class=\"item-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"items") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":33,"column":2},"end":{"line":71,"column":11}}})) != null ? stack1 : "")
+    + "  </ol>\n";
 },"4":function(container,depth0,helpers,partials,data) {
-    return "        <div class=\"item-detail item-weight\">"
-    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Weight",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":24,"column":45},"end":{"line":24,"column":67}}}))
+    return "    <div class=\"item-detail item-weight\">"
+    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Weight",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":24,"column":41},"end":{"line":24,"column":63}}}))
     + "</div>\n";
-},"6":function(container,depth0,helpers,partials,data,blockParams) {
-    var alias1=container.lambda, alias2=container.escapeExpression;
-
-  return "data-"
-    + alias2(alias1(blockParams[0][1], depth0))
-    + "=\""
-    + alias2(alias1(blockParams[0][0], depth0))
-    + "\"";
-},"8":function(container,depth0,helpers,partials,data,blockParams,depths) {
+},"6":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11574,26 +11562,24 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <li class=\"item flexrow\" data-item-id=\""
-    + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"_id") : stack1), depth0))
-    + "\">\n            <div class=\"item-name flexrow rollable\">\n                <div class=\"item-image\" style=\"background-image: url("
+  return "    <li class=\"item flexrow\">\n      <div class=\"item-name flexrow rollable\">\n        <div class=\"item-image\" style=\"background-image: url("
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"img") : stack1), depth0))
-    + ")\"></div>\n                <h4>\n                    "
+    + ")\"></div>\n        <h4>\n          "
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"isStack") : stack1),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":44,"column":20},"end":{"line":44,"column":73}}})) != null ? stack1 : "")
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = ((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"attuned") : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":45,"column":20},"end":{"line":45,"column":118}}})) != null ? stack1 : "")
-    + "\n                </h4>\n            </div>\n\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,(depths[2] != null ? lookupProperty(depths[2],"isCharacter") : depths[2]),{"name":"if","hash":{},"fn":container.program(13, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":49,"column":12},"end":{"line":57,"column":19}}})) != null ? stack1 : "")
-    + "\n            <div class=\"item-detail item-uses\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"hasUses") : stack1),{"name":"if","hash":{},"fn":container.program(16, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":60,"column":16},"end":{"line":63,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n\n            <div class=\"item-detail item-action\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = ((stack1 = ((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"activation") : stack1)) != null ? lookupProperty(stack1,"type") : stack1),{"name":"if","hash":{},"fn":container.program(18, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":67,"column":16},"end":{"line":69,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n\n            <div class=\"item-controls\">\n                <a class=\"item-control item-toggle "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"isStack") : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":39,"column":10},"end":{"line":39,"column":63}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = ((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"attuned") : stack1),{"name":"if","hash":{},"fn":container.program(9, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":40,"column":10},"end":{"line":40,"column":108}}})) != null ? stack1 : "")
+    + "\n        </h4>\n      </div>\n\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,(depths[2] != null ? lookupProperty(depths[2],"isCharacter") : depths[2]),{"name":"if","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":44,"column":6},"end":{"line":52,"column":13}}})) != null ? stack1 : "")
+    + "\n      <div class=\"item-detail item-uses\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"hasUses") : stack1),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":55,"column":8},"end":{"line":58,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n\n      <div class=\"item-detail item-action\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = ((stack1 = ((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"activation") : stack1)) != null ? lookupProperty(stack1,"type") : stack1),{"name":"if","hash":{},"fn":container.program(16, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":62,"column":8},"end":{"line":64,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n\n      <div class=\"item-controls\">\n        <a class=\"item-control item-toggle "
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"toggleClass") : stack1), depth0))
     + "\" title='"
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"toggleTitle") : stack1), depth0))
-    + "'><i class=\"fas fa-shield-alt\"></i></a>\n            </div>\n        </li>\n";
-},"9":function(container,depth0,helpers,partials,data,blockParams) {
+    + "'><i class=\"fas fa-shield-alt\"></i></a>\n      </div>\n    </li>\n";
+},"7":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11604,11 +11590,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
   return " ("
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"quantity") : stack1), depth0))
     + ")";
-},"11":function(container,depth0,helpers,partials,data) {
+},"9":function(container,depth0,helpers,partials,data) {
     return " <i class=\"fas fa-sun attuned\" title="
-    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Attuned",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":45,"column":83},"end":{"line":45,"column":106}}}))
+    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Attuned",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":40,"column":73},"end":{"line":40,"column":96}}}))
     + "></i>";
-},"13":function(container,depth0,helpers,partials,data,blockParams) {
+},"11":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11616,10 +11602,10 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <div class=\"item-detail item-weight\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"totalWeight") : stack1),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":51,"column":16},"end":{"line":55,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n";
-},"14":function(container,depth0,helpers,partials,data,blockParams) {
+  return "      <div class=\"item-detail item-weight\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"totalWeight") : stack1),{"name":"if","hash":{},"fn":container.program(12, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":46,"column":8},"end":{"line":50,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n";
+},"12":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11627,12 +11613,12 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"item-detail\">\n                    "
+  return "        <div class=\"item-detail\">\n          "
     + alias1(container.lambda(((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"totalWeight") : stack1), depth0))
     + " "
-    + alias1(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"lbs.",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":53,"column":43},"end":{"line":53,"column":63}}}))
-    + "\n                </div>\n";
-},"16":function(container,depth0,helpers,partials,data,blockParams) {
+    + alias1(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"lbs.",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":48,"column":33},"end":{"line":48,"column":53}}}))
+    + "\n        </div>\n";
+},"14":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11640,12 +11626,12 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                    <input type=\"text\" value=\""
+  return "          <input type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\" placeholder=\"0\"/>\n                    / "
+    + "\" placeholder=\"0\"/>\n          / "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"max") : stack1), depth0))
     + "\n";
-},"18":function(container,depth0,helpers,partials,data,blockParams) {
+},"16":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11653,10 +11639,10 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                "
+  return "        "
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"labels") : stack1)) != null ? lookupProperty(stack1,"activation") : stack1), depth0))
     + "\n";
-},"20":function(container,depth0,helpers,partials,data) {
+},"18":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11664,8 +11650,8 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return ((stack1 = lookupProperty(helpers,"with").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"encumbrance") : stack1),{"name":"with","hash":{},"fn":container.program(21, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":83,"column":0},"end":{"line":92,"column":9}}})) != null ? stack1 : "");
-},"21":function(container,depth0,helpers,partials,data) {
+  return ((stack1 = lookupProperty(helpers,"with").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"encumbrance") : stack1),{"name":"with","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":78,"column":0},"end":{"line":87,"column":9}}})) != null ? stack1 : "");
+},"19":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
@@ -11674,15 +11660,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     };
 
   return "<div class=\"encumbrance "
-    + ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"encumbered") : depth0),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":84,"column":24},"end":{"line":84,"column":59}}})) != null ? stack1 : "")
-    + "\">\n    <span class=\"encumbrance-bar\" style=\"width:"
+    + ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"encumbered") : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":79,"column":24},"end":{"line":79,"column":59}}})) != null ? stack1 : "")
+    + "\">\n  <span class=\"encumbrance-bar\" style=\"width:"
     + alias2(alias1((depth0 != null ? lookupProperty(depth0,"pct") : depth0), depth0))
-    + "%\"></span>\n    <span class=\"encumbrance-label\">"
+    + "%\"></span>\n  <span class=\"encumbrance-label\">"
     + alias2(alias1((depth0 != null ? lookupProperty(depth0,"value") : depth0), depth0))
     + " / "
     + alias2(alias1((depth0 != null ? lookupProperty(depth0,"max") : depth0), depth0))
-    + "</span>\n    <i class=\"encumbrance-breakpoint encumbrance-33 arrow-up\"></i>\n    <i class=\"encumbrance-breakpoint encumbrance-33 arrow-down\"></i>\n    <i class=\"encumbrance-breakpoint encumbrance-66 arrow-up\"></i>\n    <i class=\"encumbrance-breakpoint encumbrance-66 arrow-down\"></i>\n</div>\n";
-},"22":function(container,depth0,helpers,partials,data) {
+    + "</span>\n  <i class=\"encumbrance-breakpoint encumbrance-33 arrow-up\"></i>\n  <i class=\"encumbrance-breakpoint encumbrance-33 arrow-down\"></i>\n  <i class=\"encumbrance-breakpoint encumbrance-66 arrow-up\"></i>\n  <i class=\"encumbrance-breakpoint encumbrance-66 arrow-down\"></i>\n</div>\n";
+},"20":function(container,depth0,helpers,partials,data) {
     return "encumbered";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -11692,14 +11678,14 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<div class=\"inventory-filters flexrow\">\n\n    \n    <ol class=\"currency flexrow\">\n        <h3>\n            "
-    + container.escapeExpression(__default(__webpack_require__(1)).call(alias1,"Currency",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":6,"column":12},"end":{"line":6,"column":36}}}))
-    + "\n            <a class=\"currency-convert\"><i class=\"fas fa-coins\"></i></a>\n        </h3>\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"currency") : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":9,"column":8},"end":{"line":12,"column":17}}})) != null ? stack1 : "")
-    + "    </ol>\n    \n\n</div>\n\n<ol class=\"inventory-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"sections") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":19,"column":0},"end":{"line":78,"column":9}}})) != null ? stack1 : "")
+  return "<div class=\"inventory-filters flexrow\">\n\n\n  <ol class=\"currency flexrow\">\n    <h3>\n      "
+    + container.escapeExpression(__default(__webpack_require__(1)).call(alias1,"Currency",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":6,"column":6},"end":{"line":6,"column":30}}}))
+    + "\n      <a class=\"currency-convert\"><i class=\"fas fa-coins\"></i></a>\n    </h3>\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"currency") : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":9,"column":4},"end":{"line":12,"column":13}}})) != null ? stack1 : "")
+    + "  </ol>\n\n\n</div>\n\n<ol class=\"inventory-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"sections") : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":19,"column":0},"end":{"line":73,"column":9}}})) != null ? stack1 : "")
     + "</ol>\n\n\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"isCharacter") : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":82,"column":0},"end":{"line":93,"column":7}}})) != null ? stack1 : "");
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"isCharacter") : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":77,"column":0},"end":{"line":88,"column":7}}})) != null ? stack1 : "");
 },"useData":true,"useDepths":true,"useBlockParams":true});
 
 /***/ }),
@@ -11716,20 +11702,20 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "    <li class=\"inventory-header flexrow\">\n        <h3 class=\"item-name flexrow\">"
+  return "  <li class=\"inventory-header flexrow\">\n    <h3 class=\"item-name flexrow\">"
     + container.escapeExpression(container.lambda(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
     + "</h3>\n\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"hasActions") : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":6,"column":8},"end":{"line":9,"column":15}}})) != null ? stack1 : "")
-    + "    </li>\n\n    <ol class=\"item-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"hasActions") : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":6,"column":4},"end":{"line":9,"column":11}}})) != null ? stack1 : "")
+    + "  </li>\n\n  <ol class=\"item-list\">\n"
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"items") : stack1),{"name":"each","hash":{},"fn":container.program(4, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":13,"column":4},"end":{"line":47,"column":13}}})) != null ? stack1 : "")
-    + "    </ol>\n";
+    + "  </ol>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.escapeExpression;
 
-  return "        <div class=\"item-detail item-uses\">"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Uses",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":7,"column":43},"end":{"line":7,"column":63}}}))
-    + "</div>\n        <div class=\"item-detail item-action\">"
-    + alias2(__default(__webpack_require__(1)).call(alias1,"Usage",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":8,"column":45},"end":{"line":8,"column":66}}}))
+  return "    <div class=\"item-detail item-uses\">"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Uses",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":7,"column":39},"end":{"line":7,"column":59}}}))
+    + "</div>\n    <div class=\"item-detail item-action\">"
+    + alias2(__default(__webpack_require__(1)).call(alias1,"Usage",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":8,"column":41},"end":{"line":8,"column":62}}}))
     + "</div>\n";
 },"4":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.lambda, alias3=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -11739,17 +11725,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <li class=\"item flexrow "
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"isDepleted") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":14,"column":32},"end":{"line":14,"column":65}}})) != null ? stack1 : "")
-    + "\" data-item-id=\""
-    + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"_id") : stack1), depth0))
-    + "\">\n            <div class=\"item-name flexrow rollable\">\n                <div class=\"item-image\" style=\"background-image: url("
+  return "    <li class=\"item flexrow "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"isDepleted") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":14,"column":28},"end":{"line":14,"column":61}}})) != null ? stack1 : "")
+    + "\">\n      <div class=\"item-name flexrow rollable\">\n        <div class=\"item-image\" style=\"background-image: url("
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"img") : stack1), depth0))
-    + ")\"></div>\n                <h4>"
+    + ")\"></div>\n        <h4>"
     + alias3(alias2(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
-    + "</h4>\n            </div>\n\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"hasActions") : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams),"inverse":container.program(18, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":20,"column":12},"end":{"line":45,"column":19}}})) != null ? stack1 : "")
-    + "        </li>\n";
+    + "</h4>\n      </div>\n\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"hasActions") : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0, blockParams),"inverse":container.program(18, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":20,"column":6},"end":{"line":45,"column":13}}})) != null ? stack1 : "")
+    + "    </li>\n";
 },"5":function(container,depth0,helpers,partials,data) {
     return "depleted";
 },"7":function(container,depth0,helpers,partials,data,blockParams) {
@@ -11760,11 +11744,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <div class=\"item-detail item-uses\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"isOnCooldown") : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams),"inverse":container.program(10, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":22,"column":16},"end":{"line":29,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n\n            <div class=\"item-detail item-action\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = ((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"activation") : stack1)) != null ? lookupProperty(stack1,"type") : stack1),{"name":"if","hash":{},"fn":container.program(16, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":33,"column":16},"end":{"line":35,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n\n";
+  return "      <div class=\"item-detail item-uses\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"isOnCooldown") : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams),"inverse":container.program(10, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":22,"column":8},"end":{"line":29,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n\n      <div class=\"item-detail item-action\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = ((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"activation") : stack1)) != null ? lookupProperty(stack1,"type") : stack1),{"name":"if","hash":{},"fn":container.program(16, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":33,"column":8},"end":{"line":35,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n\n";
 },"8":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11773,7 +11757,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <a class=\"item-recharge rollable\">"
+  return "        <a class=\"item-recharge rollable\">"
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"labels") : stack1)) != null ? lookupProperty(stack1,"recharge") : stack1), depth0))
     + "</a>\n";
 },"10":function(container,depth0,helpers,partials,data,blockParams) {
@@ -11784,10 +11768,10 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"recharge") : stack1)) != null ? lookupProperty(stack1,"value") : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0, blockParams),"inverse":container.program(13, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":24,"column":16},"end":{"line":29,"column":16}}})) != null ? stack1 : "");
+  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = ((stack1 = ((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"recharge") : stack1)) != null ? lookupProperty(stack1,"value") : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0, blockParams),"inverse":container.program(13, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":24,"column":8},"end":{"line":29,"column":8}}})) != null ? stack1 : "");
 },"11":function(container,depth0,helpers,partials,data) {
-    return "                "
-    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Charged",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":25,"column":16},"end":{"line":25,"column":39}}}))
+    return "        "
+    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Charged",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":25,"column":8},"end":{"line":25,"column":31}}}))
     + "\n\n";
 },"13":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -11797,7 +11781,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = blockParams[3][0]) != null ? lookupProperty(stack1,"hasUses") : stack1),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":27,"column":16},"end":{"line":29,"column":16}}})) != null ? stack1 : "");
+  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = blockParams[3][0]) != null ? lookupProperty(stack1,"hasUses") : stack1),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":27,"column":8},"end":{"line":29,"column":8}}})) != null ? stack1 : "");
 },"14":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11806,11 +11790,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <input type=\"text\" value=\""
+  return "        <input type=\"text\" value=\""
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = blockParams[4][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
-    + "\" placeholder=\"0\"/>/ "
+    + "\" placeholder=\"0\" />/ "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = blockParams[4][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"max") : stack1), depth0))
-    + "\n                ";
+    + "\n        ";
 },"16":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11819,7 +11803,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                "
+  return "        "
     + container.escapeExpression(container.lambda(((stack1 = ((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"labels") : stack1)) != null ? lookupProperty(stack1,"activation") : stack1), depth0))
     + "\n";
 },"18":function(container,depth0,helpers,partials,data,blockParams) {
@@ -11830,7 +11814,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"isClass") : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":38,"column":12},"end":{"line":45,"column":12}}})) != null ? stack1 : "");
+  return ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"isClass") : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":38,"column":6},"end":{"line":45,"column":6}}})) != null ? stack1 : "");
 },"19":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11839,11 +11823,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <div class=\"item-detail player-class\">\n                "
+  return "      <div class=\"item-detail player-class\">\n        "
     + alias2(alias1(((stack1 = ((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"subclass") : stack1), depth0))
-    + "\n            </div>\n            <div class=\"item-detail item-action\">\n                Level "
+    + "\n      </div>\n      <div class=\"item-detail item-action\">\n        Level "
     + alias2(alias1(((stack1 = ((stack1 = blockParams[2][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"levels") : stack1), depth0))
-    + "\n            </div>\n            ";
+    + "\n      </div>\n      ";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11853,7 +11837,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     };
 
   return "<ol class=\"inventory-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"sections") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":2,"column":0},"end":{"line":49,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? lookupProperty(depth0,"sections") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":2,"column":2},"end":{"line":49,"column":11}}})) != null ? stack1 : "")
     + "</ol>\n";
 },"useData":true,"useBlockParams":true});
 
@@ -11864,8 +11848,8 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 var Handlebars = __webpack_require__(51);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
-    return "        <label>"
-    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Spellcasting",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":4,"column":15},"end":{"line":4,"column":43}}}))
+    return "    <label>"
+    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Spellcasting",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":4,"column":11},"end":{"line":4,"column":39}}}))
     + "</label>\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
@@ -11875,11 +11859,11 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <label>"
-    + alias1(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Level",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":6,"column":15},"end":{"line":6,"column":36}}}))
-    + "</label>\n        <input class=\"spellcasting-level\" type=\"text\" name=\"data.details.spellLevel\"\n               value=\""
+  return "    <label>"
+    + alias1(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Level",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":6,"column":11},"end":{"line":6,"column":32}}}))
+    + "</label>\n    <input class=\"spellcasting-level\" type=\"text\" name=\"data.details.spellLevel\" value=\""
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"details") : stack1)) != null ? lookupProperty(stack1,"spellLevel") : stack1), depth0))
-    + "\" data-dtype=\"Number\" placeholder=\"0\"/>\n";
+    + "\" placeholder=\"0\" />\n";
 },"5":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11888,10 +11872,10 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <option value=\"\">"
-    + container.escapeExpression(__default(__webpack_require__(1)).call(alias1,"None",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":12,"column":29},"end":{"line":12,"column":49}}}))
+  return "      <option value=\"\">"
+    + container.escapeExpression(__default(__webpack_require__(1)).call(alias1,"None",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":11,"column":23},"end":{"line":11,"column":43}}}))
     + "</option>\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"abilities") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":13,"column":12},"end":{"line":15,"column":21}}})) != null ? stack1 : "");
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"abilities") : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 2, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":12,"column":6},"end":{"line":14,"column":15}}})) != null ? stack1 : "");
 },"6":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11900,7 +11884,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <option value=\""
+  return "      <option value=\""
     + alias2(alias1(blockParams[0][1], depth0))
     + "\">"
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
@@ -11926,19 +11910,19 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "    <li class=\"item flexrow inventory-header spellbook-header\">\n        <div class=\"item-name flexrow\">\n            <h3>"
+  return "  <li class=\"item flexrow inventory-header spellbook-header\">\n    <div class=\"item-name flexrow\">\n      <h3>"
     + alias1(container.lambda(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"label") : stack1), depth0))
-    + "</h3>\n        </div>\n\n        <div class=\"spell-slots\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"usesSlots") : stack1),{"name":"if","hash":{},"fn":container.program(13, data, 0, blockParams, depths),"inverse":container.program(16, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":31,"column":12},"end":{"line":46,"column":19}}})) != null ? stack1 : "")
-    + "        </div>\n\n        <div class=\"spell-school\">"
-    + alias1(__default(__webpack_require__(1)).call(alias2,"Spell School",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":49,"column":34},"end":{"line":49,"column":62}}}))
-    + "</div>\n        <div class=\"spell-action\">"
-    + alias1(__default(__webpack_require__(1)).call(alias2,"Spell Usage",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":50,"column":34},"end":{"line":50,"column":61}}}))
-    + "</div>\n        <div class=\"spell-target\">"
-    + alias1(__default(__webpack_require__(1)).call(alias2,"Spell Target",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":51,"column":34},"end":{"line":51,"column":62}}}))
-    + "</div>\n\n        <div class=\"item-controls\">\n            \n        </div>\n    </li>\n\n    <ol class=\"item-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"spells") : stack1),{"name":"each","hash":{},"fn":container.program(18, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":59,"column":4},"end":{"line":91,"column":13}}})) != null ? stack1 : "")
-    + "    </ol>\n";
+    + "</h3>\n    </div>\n\n    <div class=\"spell-slots\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"usesSlots") : stack1),{"name":"if","hash":{},"fn":container.program(13, data, 0, blockParams, depths),"inverse":container.program(16, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":31,"column":6},"end":{"line":45,"column":15}}})) != null ? stack1 : "")
+    + "    </div>\n\n    <div class=\"spell-school\">"
+    + alias1(__default(__webpack_require__(1)).call(alias2,"Spell School",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":48,"column":30},"end":{"line":48,"column":58}}}))
+    + "</div>\n    <div class=\"spell-action\">"
+    + alias1(__default(__webpack_require__(1)).call(alias2,"Spell Usage",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":49,"column":30},"end":{"line":49,"column":57}}}))
+    + "</div>\n    <div class=\"spell-target\">"
+    + alias1(__default(__webpack_require__(1)).call(alias2,"Spell Target",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":50,"column":30},"end":{"line":50,"column":58}}}))
+    + "</div>\n\n    <div class=\"item-controls\">\n\n    </div>\n  </li>\n\n  <ol class=\"item-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias2,((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"spells") : stack1),{"name":"each","hash":{},"fn":container.program(18, data, 2, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":58,"column":4},"end":{"line":90,"column":13}}})) != null ? stack1 : "")
+    + "  </ol>\n";
 },"13":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11947,22 +11931,18 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <input type=\"text\" name=\"data.spells."
+  return "      <input type=\"text\" name=\"data.spells."
     + alias2(alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"prop") : stack1), depth0))
     + ".value\" value=\""
     + alias2(alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"uses") : stack1), depth0))
-    + "\" placeholder=\"0\"\n                   data-dtype=\"Number\"/>\n            <span class=\"sep\"> / </span>\n            <span class=\"spell-max\" data-level=\""
-    + alias2(alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"prop") : stack1), depth0))
-    + "\" data-slots=\""
-    + alias2(alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"slots") : stack1), depth0))
-    + "\">\n                "
+    + "\" placeholder=\"0\"/>\n      <span class=\"sep\"> / </span>\n      <span class=\"spell-max\">\n        "
     + ((stack1 = alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"slots") : stack1), depth0)) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depths[1] != null ? lookupProperty(depths[1],"editable") : depths[1]),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":37,"column":16},"end":{"line":41,"column":23}}})) != null ? stack1 : "");
+    + ((stack1 = lookupProperty(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depths[1] != null ? lookupProperty(depths[1],"editable") : depths[1]),{"name":"if","hash":{},"fn":container.program(14, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":36,"column":8},"end":{"line":40,"column":15}}})) != null ? stack1 : "");
 },"14":function(container,depth0,helpers,partials,data) {
-    return "                <a class=\"slot-max-override\" title=\""
-    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Override slots",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":38,"column":52},"end":{"line":38,"column":82}}}))
-    + "\">\n                    <i class=\"fas fa-edit\"></i>\n                </a>\n";
+    return "        <a class=\"slot-max-override\" title=\""
+    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"Override slots",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":37,"column":44},"end":{"line":37,"column":74}}}))
+    + "\">\n          <i class=\"fas fa-edit\"></i>\n        </a>\n";
 },"16":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -11971,9 +11951,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "            <span>"
+  return "        <span>"
     + ((stack1 = alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"uses") : stack1), depth0)) != null ? stack1 : "")
-    + "</span>\n            <span class=\"sep\"> / </span>\n            <span class=\"spell-max\">"
+    + "</span>\n        <span class=\"sep\"> / </span>\n        <span class=\"spell-max\">"
     + ((stack1 = alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"slots") : stack1), depth0)) != null ? stack1 : "")
     + "</span>\n";
 },"18":function(container,depth0,helpers,partials,data,blockParams) {
@@ -11984,29 +11964,27 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "        <li class=\"item flexrow\" data-item-id=\""
-    + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"_id") : stack1), depth0))
-    + "\">\n            <div class=\"item-name flexrow rollable\">\n                <div class=\"item-image\" style=\"background-image: url("
+  return "    <li class=\"item flexrow\">\n      <div class=\"item-name flexrow rollable\">\n        <div class=\"item-image\" style=\"background-image: url("
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"img") : stack1), depth0))
-    + ")\"></div>\n                <h4>"
+    + ")\"></div>\n        <h4>"
     + alias2(alias1(((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"name") : stack1), depth0))
     + "</h4>\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = ((stack1 = ((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"per") : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":64,"column":16},"end":{"line":66,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n\n            <div class=\"spell-comps\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"components") : stack1),{"name":"each","hash":{},"fn":container.program(21, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":70,"column":16},"end":{"line":72,"column":25}}})) != null ? stack1 : "")
-    + "            </div>\n            <div class=\"spell-school\">"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = ((stack1 = ((stack1 = blockParams[0][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"per") : stack1),{"name":"if","hash":{},"fn":container.program(19, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":63,"column":8},"end":{"line":65,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n\n      <div class=\"spell-comps\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"components") : stack1),{"name":"each","hash":{},"fn":container.program(21, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":69,"column":8},"end":{"line":71,"column":17}}})) != null ? stack1 : "")
+    + "      </div>\n      <div class=\"spell-school\">"
     + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"school") : stack1), depth0))
-    + "</div>\n            <div class=\"spell-action\">"
+    + "</div>\n      <div class=\"spell-action\">"
     + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"activation") : stack1), depth0))
-    + "</div>\n            <div class=\"spell-target\" title=\""
-    + alias2(__default(__webpack_require__(1)).call(alias3,"Range",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":76,"column":45},"end":{"line":76,"column":66}}}))
+    + "</div>\n      <div class=\"spell-target\" title=\""
+    + alias2(__default(__webpack_require__(1)).call(alias3,"Range",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":75,"column":39},"end":{"line":75,"column":60}}}))
     + ": "
     + alias2(alias1(((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"range") : stack1), depth0))
     + "\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"target") : stack1),{"name":"if","hash":{},"fn":container.program(23, data, 0, blockParams),"inverse":container.program(25, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":77,"column":16},"end":{"line":80,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n\n\n            \n            <div class=\"item-controls\">\n"
-    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"canPrepare") : stack1),{"name":"if","hash":{},"fn":container.program(27, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":86,"column":16},"end":{"line":88,"column":23}}})) != null ? stack1 : "")
-    + "            </div>\n        </li>\n";
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"target") : stack1),{"name":"if","hash":{},"fn":container.program(23, data, 0, blockParams),"inverse":container.program(25, data, 0, blockParams),"data":data,"blockParams":blockParams,"loc":{"start":{"line":76,"column":8},"end":{"line":79,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n\n\n\n      <div class=\"item-controls\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias3,((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"canPrepare") : stack1),{"name":"if","hash":{},"fn":container.program(27, data, 0, blockParams),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":85,"column":8},"end":{"line":87,"column":15}}})) != null ? stack1 : "")
+    + "      </div>\n    </li>\n";
 },"19":function(container,depth0,helpers,partials,data,blockParams) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -12015,7 +11993,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <div class=\"item-detail spell-uses\">Uses "
+  return "        <div class=\"item-detail spell-uses\">Uses "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"value") : stack1), depth0))
     + " / "
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"data") : stack1)) != null ? lookupProperty(stack1,"uses") : stack1)) != null ? lookupProperty(stack1,"max") : stack1), depth0))
@@ -12023,7 +12001,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 },"21":function(container,depth0,helpers,partials,data) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "                <span class=\"spell-component "
+  return "        <span class=\"spell-component "
     + alias2(alias1(depth0, depth0))
     + "\">"
     + alias2(alias1(depth0, depth0))
@@ -12036,9 +12014,9 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                "
+  return "        "
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"labels") : depth0)) != null ? lookupProperty(stack1,"target") : stack1), depth0))
-    + "\n                ";
+    + "\n        ";
 },"25":function(container,depth0,helpers,partials,data) {
     return "None\n";
 },"27":function(container,depth0,helpers,partials,data,blockParams) {
@@ -12049,15 +12027,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "                <a class=\"item-control item-toggle "
+  return "        <a class=\"item-control item-toggle "
     + alias2(alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"toggleClass") : stack1), depth0))
     + "\" title=\""
     + alias2(alias1(((stack1 = blockParams[1][0]) != null ? lookupProperty(stack1,"toggleTitle") : stack1), depth0))
     + "\"><i class=\"fas fa-sun\"></i></a>\n";
 },"29":function(container,depth0,helpers,partials,data) {
-    return "    <li class=\"item flexrow inventory-header spellbook-header spellbook-empty\">\n        <div class=\"item-controls\">\n        </div>\n    </li>\n    <li class=\"item flexrow\"><p class=\"notes\">"
-    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"This character has no spellcaster levels.",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":98,"column":46},"end":{"line":98,"column":103}}}))
-    + "</p></li>\n";
+    return "  <li class=\"item flexrow inventory-header spellbook-header spellbook-empty\">\n    <div class=\"item-controls\">\n    </div>\n  </li>\n  <li class=\"item flexrow\">\n    <p class=\"notes\">"
+    + container.escapeExpression(__default(__webpack_require__(1)).call(depth0 != null ? depth0 : (container.nullContext || {}),"This character has no spellcaster levels.",{"name":"stringify","hash":{},"data":data,"loc":{"start":{"line":98,"column":21},"end":{"line":98,"column":78}}}))
+    + "</p>\n  </li>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -12066,15 +12044,15 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
         return undefined
     };
 
-  return "<div class=\"inventory-filters spellbook-filters flexrow\">\n    <div class=\"form-group spellcasting-ability\">\n"
-    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,(depth0 != null ? lookupProperty(depth0,"isNPC") : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.program(3, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":3,"column":8},"end":{"line":9,"column":19}}})) != null ? stack1 : "")
-    + "        <select name=\"data.attributes.spellcasting\" data-type=\"String\">\n"
-    + ((stack1 = __default(__webpack_require__(140)).call(alias1,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"spellcasting") : stack1),{"name":"select","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":11,"column":12},"end":{"line":16,"column":23}}})) != null ? stack1 : "")
-    + "        </select>\n    </div>\n\n    <div class=\"prepared_spells\">"
-    + container.escapeExpression(__default(__webpack_require__(1)).call(alias1,"Prepared",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":20,"column":33},"end":{"line":20,"column":57}}}))
-    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"preparedSpells") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams, depths),"inverse":container.program(10, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":20,"column":57},"end":{"line":20,"column":119}}})) != null ? stack1 : "")
-    + "</div>\n</div>\n\n<ol class=\"inventory-list\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"spellbook") : depth0),{"name":"each","hash":{},"fn":container.program(12, data, 1, blockParams, depths),"inverse":container.program(29, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":24,"column":0},"end":{"line":99,"column":9}}})) != null ? stack1 : "")
+  return "<div class=\"inventory-filters spellbook-filters flexrow\">\n  <div class=\"form-group spellcasting-ability\">\n"
+    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,(depth0 != null ? lookupProperty(depth0,"isNPC") : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.program(3, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":3,"column":4},"end":{"line":8,"column":15}}})) != null ? stack1 : "")
+    + "    <select name=\"data.attributes.spellcasting\">\n"
+    + ((stack1 = __default(__webpack_require__(140)).call(alias1,((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"data") : depth0)) != null ? lookupProperty(stack1,"attributes") : stack1)) != null ? lookupProperty(stack1,"spellcasting") : stack1),{"name":"select","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"blockParams":blockParams,"loc":{"start":{"line":10,"column":6},"end":{"line":15,"column":17}}})) != null ? stack1 : "")
+    + "    </select>\n  </div>\n\n  <div class=\"prepared_spells\">"
+    + container.escapeExpression(__default(__webpack_require__(1)).call(alias1,"Prepared",{"name":"stringify","hash":{},"data":data,"blockParams":blockParams,"loc":{"start":{"line":19,"column":31},"end":{"line":19,"column":55}}}))
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"preparedSpells") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0, blockParams, depths),"inverse":container.program(10, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":19,"column":55},"end":{"line":19,"column":117}}})) != null ? stack1 : "")
+    + "\n  </div>\n</div>\n\n<ol class=\"inventory-list\">\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"spellbook") : depth0),{"name":"each","hash":{},"fn":container.program(12, data, 1, blockParams, depths),"inverse":container.program(29, data, 0, blockParams, depths),"data":data,"blockParams":blockParams,"loc":{"start":{"line":24,"column":2},"end":{"line":100,"column":11}}})) != null ? stack1 : "")
     + "</ol>\n";
 },"useData":true,"useDepths":true,"useBlockParams":true});
 
@@ -12092,7 +12070,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[8,"
         return undefined
     };
 
-  return "<div class=\"editor\">\r\n    <div class=\"editor-content\">"
+  return "<div class=\"editor\">\r\n  <div class=\"editor-content\">"
     + ((stack1 = container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"sections") : depth0)) != null ? lookupProperty(stack1,"value") : stack1), depth0)) != null ? stack1 : "")
     + "</div>\r\n</div>";
 },"useData":true});

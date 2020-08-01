@@ -1,119 +1,119 @@
 <div class="traits">
-    <div class="form-group">
-        <label>{{stringify "Size"}}</label>
-        <select class="actor-size" name="data.traits.size">
-            {{#select data.traits.size}}
-            {{#each actorSizes as |label size|}}
-                <option value="{{size}}">{{label}}</option>
-            {{/each}}
-            {{/select}}
-        </select>
-    </div>
+  <div class="form-group">
+    <label>{{stringify "Size"}}</label>
+    <select class="actor-size" name="data.traits.size">
+      {{#select data.traits.size}}
+      {{#each actorSizes as |label size|}}
+        <option value="{{size}}">{{label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </div>
 
-    <div class="form-group {{#unless data.traits.senses}}inactive{{/unless}}">
-        <label>{{stringify "Senses"}}</label>
-        <input type="text" name="data.traits.senses" value="{{data.traits.senses}}" placeholder="{{ stringify 'None' }}"/>
-    </div>
+  <div class="form-group {{#unless data.traits.senses}}inactive{{/unless}}">
+    <label>{{stringify "Senses"}}</label>
+    <input type="text" name="data.traits.senses" value="{{data.traits.senses}}" placeholder="{{ stringify 'None' }}"/>
+  </div>
 
-    <div class="form-group {{data.traits.languages.cssClass}}">
-        <label>{{stringify "Languages"}}</label>
-        <a class="trait-selector" data-options="languages" data-target="data.traits.languages">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.languages.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+  <div class="form-group {{data.traits.languages.cssClass}}">
+    <label>{{stringify "Languages"}}</label>
+    <a class="trait-selector">
 
-    <div class="form-group {{data.traits.di.cssClass}}">
-        <label>{{stringify "Damage Immunities"}}</label>
-        <a class="trait-selector" data-options="damageTypes" data-target="data.traits.di">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.di.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.languages.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
 
-    <div class="form-group {{data.traits.dr.cssClass}}">
-        <label>{{stringify "Damage Resistances"}}</label>
-        <a class="trait-selector" data-options="damageTypes" data-target="data.traits.dr">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.dr.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+  <div class="form-group {{data.traits.di.cssClass}}">
+    <label>{{stringify "Damage Immunities"}}</label>
+    <a class="trait-selector">
 
-    <div class="form-group {{data.traits.dv.cssClass}}">
-        <label>{{stringify "Damage Vulnerabilities"}}</label>
-        <a class="trait-selector" data-options="damageTypes" data-target="data.traits.dv">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.dv.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.di.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
 
-    <div class="form-group {{data.traits.ci.cssClass}}">
-        <label>{{stringify "Condition Immunities"}}</label>
-        <a class="trait-selector" data-options="conditionTypes" data-target="data.traits.ci">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.ci.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+  <div class="form-group {{data.traits.dr.cssClass}}">
+    <label>{{stringify "Damage Resistances"}}</label>
+    <a class="trait-selector">
 
-    {{#if isCharacter}}
-    <div class="form-group {{data.traits.weaponProf.cssClass}}">
-        <label>{{stringify "Weapon Proficiencies"}}</label>
-        <a class="trait-selector" data-options="weaponProficiencies" data-target="data.traits.weaponProf">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.weaponProf.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.dr.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
 
-    <div class="form-group {{data.traits.armorProf.cssClass}}">
-        <label>{{stringify "Armor Proficiencies"}}</label>
-        <a class="trait-selector" data-options="armorProficiencies" data-target="data.traits.armorProf">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.armorProf.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
+  <div class="form-group {{data.traits.dv.cssClass}}">
+    <label>{{stringify "Damage Vulnerabilities"}}</label>
+    <a class="trait-selector">
 
-    <div class="form-group {{data.traits.toolProf.cssClass}}">
-        <label>{{stringify "Tool Proficiencies"}}</label>
-        <a class="trait-selector" data-options="toolProficiencies" data-target="data.traits.toolProf">
-            
-        </a>
-        <ul class="traits-list">
-        {{#each data.traits.toolProf.selected as |v k|}}
-            <li class="tag {{k}}">{{v}}</li>
-        {{/each}}
-        </ul>
-    </div>
-    {{/if}}
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.dv.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
 
-    <div class="form-group ">
-        <label>{{stringify "Special Traits"}}</label>
-    </div>
+  <div class="form-group {{data.traits.ci.cssClass}}">
+    <label>{{stringify "Condition Immunities"}}</label>
+    <a class="trait-selector">
+
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.ci.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
+
+  {{#if isCharacter}}
+  <div class="form-group {{data.traits.weaponProf.cssClass}}">
+    <label>{{stringify "Weapon Proficiencies"}}</label>
+    <a class="trait-selector">
+
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.weaponProf.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
+
+  <div class="form-group {{data.traits.armorProf.cssClass}}">
+    <label>{{stringify "Armor Proficiencies"}}</label>
+    <a class="trait-selector">
+
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.armorProf.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
+
+  <div class="form-group {{data.traits.toolProf.cssClass}}">
+    <label>{{stringify "Tool Proficiencies"}}</label>
+    <a class="trait-selector">
+
+    </a>
+    <ul class="traits-list">
+    {{#each data.traits.toolProf.selected as |v k|}}
+      <li class="tag {{k}}">{{v}}</li>
+    {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+
+  <div class="form-group ">
+    <label>{{stringify "Special Traits"}}</label>
+  </div>
 </div>
