@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "target": "es2019",
+        "types": [
+            "./node_modules/@types/jquery",
+            "./node_modules/handlebars/types"
+        ],
+        "outDir": "./out-js"
+    }
+}

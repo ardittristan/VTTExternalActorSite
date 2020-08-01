@@ -1,0 +1,93 @@
+<div class="inventory-filters flexrow">
+
+    
+    <ol class="currency flexrow">
+        <h3>
+            {{stringify "Currency"}}
+            <a class="currency-convert"><i class="fas fa-coins"></i></a>
+        </h3>
+        {{#each data.currency as |v k|}}
+        <label class="denomination {{k}}">{{ lookup ../config.currencies k }}</label>
+        <input type="text" name="data.currency.{{k}}" value="{{v}}" data-dtype="Number"/>
+        {{/each}}
+    </ol>
+    
+
+</div>
+
+<ol class="inventory-list">
+{{#each sections as |section sid|}}
+    <li class="inventory-header flexrow">
+        <h3 class="item-name flexrow">{{section.label}}</h3>
+
+        {{#if ../isCharacter}}
+        <div class="item-detail item-weight">{{stringify "Weight"}}</div>
+        {{/if}}
+
+        <div class="item-detail item-uses">{{stringify "Charges"}}</div>
+        <div class="item-detail item-action">{{stringify "Usage"}}</div>
+
+        <div class="item-controls">
+            <a class="item-control item-create" title='{{stringify "Create Item"}}' {{#each section.dataset as |v k|}}data-{{k}}="{{v}}"{{/each}}>
+                
+            </a>
+        </div>
+    </li>
+
+    <ol class="item-list">
+    {{#each section.items as |item iid|}}
+        <li class="item flexrow" data-item-id="{{item._id}}">
+            <div class="item-name flexrow rollable">
+                <div class="item-image" style="background-image: url({{item.img}})"></div>
+                <h4>
+                    {{item.name~}}
+                    {{~#if item.isStack}} ({{item.data.quantity}}){{/if}}
+                    {{~#if item.data.attuned}} <i class="fas fa-sun attuned" title={{stringify "Attuned"}}></i>{{/if}}
+                </h4>
+            </div>
+
+            {{#if ../../isCharacter}}
+            <div class="item-detail item-weight">
+                {{#if item.totalWeight}}
+                <div class="item-detail">
+                    {{ item.totalWeight }} {{stringify "lbs."}}
+                </div>
+                {{/if}}
+            </div>
+            {{/if}}
+
+            <div class="item-detail item-uses">
+                {{#if item.hasUses }}
+                    <input type="text" value="{{item.data.uses.value}}" placeholder="0"/>
+                    / {{item.data.uses.max}}
+                {{/if}}
+            </div>
+
+            <div class="item-detail item-action">
+                {{#if item.data.activation.type }}
+                {{item.labels.activation}}
+                {{/if}}
+            </div>
+
+            <div class="item-controls">
+                <a class="item-control item-toggle {{item.toggleClass}}" title='{{item.toggleTitle}}'><i class="fas fa-shield-alt"></i></a>
+            </div>
+        </li>
+    {{/each}}
+    </ol>
+{{/each}}
+</ol>
+
+
+{{#if isCharacter }}
+{{#with data.attributes.encumbrance}}
+<div class="encumbrance {{#if encumbered}}encumbered{{/if}}">
+    <span class="encumbrance-bar" style="width:{{pct}}%"></span>
+    <span class="encumbrance-label">{{value}} / {{max}}</span>
+    <i class="encumbrance-breakpoint encumbrance-33 arrow-up"></i>
+    <i class="encumbrance-breakpoint encumbrance-33 arrow-down"></i>
+    <i class="encumbrance-breakpoint encumbrance-66 arrow-up"></i>
+    <i class="encumbrance-breakpoint encumbrance-66 arrow-down"></i>
+</div>
+{{/with}}
+{{/if}}
