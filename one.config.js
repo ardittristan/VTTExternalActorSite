@@ -4,6 +4,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -52,6 +53,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin(),
+
         new HtmlWebpackPlugin({
             inlineSource: '(?<!.*fontawesome).(js|css)$',
             title: "5E Sheet",
@@ -65,6 +67,17 @@ module.exports = {
                 useShortDoctype: true
             }
         }),
-        new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin)
+
+        new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin),
+
+        new FileManagerPlugin({
+            onEnd: [
+                {
+                    copy: [
+                        { source: path.resolve(__dirname, 'distOne', 'index.html'), destination: path.resolve(__dirname, 'index.html') }
+                    ]
+                }
+            ]
+        })
     ]
 };
