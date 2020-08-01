@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="https://unpkg.com/eventemitter3@latest/umd/eventemitter3.min.js"></script>
+        
+        <script src="global.js"></script>
+
+        <style class="nodestoFont">
+            @font-face {
+                font-family: "Nodesto";
+                src: url("fonts/NodestoCapsCondensed.otf");
+            }
+        </style>
+
+        <script src="libs/fontawesome.js"></script>
+        <script src="populatesheet.js"></script>
+        <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/dice-d20.svg" />
+        <link rel="stylesheet" href="index.css" />
+        <title>5E Sheet</title>
+    </head>
+
+    <body>
+        <div>
+            <div class="formDiv">
+                <form id="siteUrlForm" onsubmit="event.preventDefault()">
+                    <input type="text" id="siteUrl" placeholder="Actor url"/>
+                    <button type="submit">Show Actor Sheet</button>
+                </form>
+            </div>
+            <div class="titleDiv">
+                Foundry&nbsp;Character Viewer
+            </div>
+        </div>
+        <section class="window-content"></section>
+        <script src="index.js"></script>
+    </body>
+
+</html>
