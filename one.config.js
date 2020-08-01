@@ -7,13 +7,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        index: ['babel-polyfill',
+        index_bundle: ['babel-polyfill',
         './src/global.js',
         './src/libs/onefile.js',
-        './src/libs/fontawesome.js',
         './src/populatesheet.js',
         './src/index.js',
-        ]
+        ],
+        fontawesome: './src/libs/fontawesome.js'
     },
     performance: {
         hints: false
@@ -35,7 +35,7 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'index_bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'distOne'),
     },
     module: {
@@ -53,7 +53,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            inlineSource: '.(js|css)$',
+            inlineSource: '(?<!.*fontawesome).(js|css)$',
             title: "5E Sheet",
             template: "./src/handlebars/index.hbs",
             minify: {

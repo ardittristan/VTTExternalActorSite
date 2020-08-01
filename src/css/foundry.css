@@ -1,6 +1,3 @@
-/* ----------------------------------------- */
-/*  Fonts                                    */
-/* ----------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
@@ -39,10 +36,6 @@ body.background {
   border-radius: 5px;
   box-shadow: 0 0 10px #000;
 }
-/* ---------------------------------------- */
-/*  Text                                    */
-/* ---------------------------------------- */
-/* Headers */
 h1,
 h2,
 h3,
@@ -62,7 +55,6 @@ h2 {
 h3 {
   font-size: 1.125em;
 }
-/* Links */
 a {
   cursor: pointer;
 }
@@ -97,26 +89,22 @@ a.inline-roll.blindroll {
   background: #f5eaf5;
   border-color: #6b476b;
 }
-/* Paragraph */
 p {
   margin: 0.5em 0;
 }
 ::selection {
   background: #c9c7b8;
 }
-/* Lists */
 ul,
 ol {
   margin: 0.5em 0;
   padding: 0 0 0 1.5em;
 }
-/* HR separators */
 hr {
   border: none;
   border-top: 1px solid #b5b3a4;
   border-bottom: 1px solid #f0f0e0;
 }
-/* Blockquote */
 blockquote {
   margin: 0.5em 0 0.5em 10px;
   padding: 0 0 0 20px;
@@ -126,16 +114,12 @@ blockquote {
 blockquote em {
   font-style: normal;
 }
-/* Secret Sections */
 section.secret {
   padding: 0 5px;
   background: rgba(53, 0, 121, 0.05);
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
 }
-/* ---------------------------------------- */
-/* Tables                                   */
-/* ---------------------------------------- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -152,9 +136,6 @@ table thead {
 table thead th {
   padding: 0.25em 0;
 }
-/* ----------------------------------------- */
-/* Scrollbar
-/* ----------------------------------------- */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -172,9 +153,6 @@ table thead th {
   scrollbar-width: thin;
   scrollbar-color: #782e22 #111;
 }
-/* ----------------------------------------- */
-/* Images
-/* ----------------------------------------- */
 img {
   box-sizing: border-box;
   border: 1px solid #000;
@@ -186,9 +164,6 @@ img.noborder {
   box-shadow: none;
   outline: none;
 }
-/**
- * Basic Application Wrapper
- */
 .window-content {
   background: var(--denim) repeat;
   border-radius: 5px;
@@ -198,9 +173,6 @@ img.noborder {
   color: #f0f0e0;
   z-index: 30;
 }
-/* ----------------------------------------- */
-/*  Context Dropdown Menu
-/* ----------------------------------------- */
 #context-menu {
   width: 100%;
   height: max-content;
@@ -236,9 +208,6 @@ img.noborder {
 #context-menu li.context-item > i {
   margin-right: 5px;
 }
-/* ---------------------------------------- */
-/*  Forms                                   */
-/* ---------------------------------------- */
 form .form-group,
 form .form-group-stacked {
   clear: both;
@@ -310,13 +279,9 @@ form .hint {
   color: #4b4a44;
   margin: 3px 0;
 }
-/* ---------------------------------------- */
-/* Form Inputs                              */
-/* ---------------------------------------- */
 input:focus {
   outline: none;
 }
-/* Text Input */
 input[type="text"],
 input[type="password"],
 input[type="datetime-local"] {
@@ -343,7 +308,6 @@ input[type="password"]:focus,
 input[type="datetime-local"]:focus {
   box-shadow: 0 0 5px red;
 }
-/* Checkboxes */
 input[type="checkbox"] {
   flex: 0 0 20px;
   width: 20px;
@@ -372,7 +336,6 @@ label.checkbox > input[type="checkbox"] {
 label.checkbox.right > input[type="checkbox"] {
   margin: 0 0 0 2px;
 }
-/* Select Boxes */
 select {
   height: 25px;
   background: rgba(0, 0, 0, 0.05);
@@ -385,7 +348,6 @@ select:focus {
   box-shadow: 0 0 5px red;
   outline: none;
 }
-/* Text Areas */
 textarea {
   width: 100%;
   min-height: 50px;
@@ -402,7 +364,6 @@ textarea:focus {
   outline: 2px solid #782e22;
   box-shadow: 0 0 10px #ff6400;
 }
-/* Buttons */
 button {
   width: 100%;
   margin: 0 1px;
@@ -442,7 +403,6 @@ input::placeholder {
   color: #4b4a44;
   opacity: 1;
 }
-/* Color Picker */
 input[type="text"].color {
   flex: 1.45;
 }
@@ -455,7 +415,6 @@ input[type="color"][data-edit][data-edit] {
   margin-left: 5px;
   flex: 1.45;
 }
-/* File Pickers */
 button.file-picker {
   flex: 0 0 24px;
   line-height: 24px;
@@ -466,7 +425,6 @@ button.file-picker + input[type="text"] {
   height: 28px;
   margin-right: 5px !important;
 }
-/* Range Input */
 input[type=range] {
   background: transparent;
   -webkit-appearance: none;
@@ -560,9 +518,6 @@ input[type="range"] + .range-value {
   padding: 2px;
   margin-left: 10px;
 }
-/**
- * Dark mode inputs
- */
 .dark button {
   background: rgba(255, 255, 240, 0.8);
   border: 2px solid #c9c7b8;
@@ -571,9 +526,6 @@ input[type="range"] + .range-value {
 .dark select {
   background: rgba(255, 255, 240, 0.8);
 }
-/* ----------------------------------------- */
-/* TinyMCE Editor
-/* ----------------------------------------- */
 .editor {
   position: relative;
   max-height: 100%;
@@ -599,7 +551,6 @@ input[type="range"] + .range-value {
 .editor:hover .editor-edit {
   display: block;
 }
-/* Flexbox */
 .flexrow {
   display: flex;
   flex-direction: row;
@@ -632,9 +583,6 @@ input[type="range"] + .range-value {
 .flexcol > .flex3 {
   flex: 3;
 }
-/* ----------------------------------------- */
-/* Tabbed Containers
-/* ----------------------------------------- */
 .tabs {
   display: flex;
   flex-direction: row;
@@ -673,16 +621,10 @@ input[type="range"] + .range-value {
 .tab[data-tab].active.flexcol {
   display: flex;
 }
-/* ----------------------------------------- */
-/* General Sheet Styling
-/* ----------------------------------------- */
 .editor-content {
   height: 100%;
   overflow-y: auto;
 }
-/* ----------------------------------------- */
-/* Actor and Item Sheets
-/* ----------------------------------------- */
 .body {
   display: flex;
   flex-direction: column;
