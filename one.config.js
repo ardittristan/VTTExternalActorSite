@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
+const HtmlWebpackSkipAssetsPlugin = require('html-webpack-skip-assets-plugin').HtmlWebpackSkipAssetsPlugin;
 
 module.exports = {
     entry: {
@@ -55,7 +56,8 @@ module.exports = {
         new MiniCssExtractPlugin(),
 
         new HtmlWebpackPlugin({
-            inlineSource: '(?<!.*fontawesome).(js|css)$',
+            inlineSource: '.(js|css)$',
+            excludeAssets: ['fontawesome.*.js'],
             title: "5E Sheet",
             template: "./src/handlebars/index.hbs",
             minify: {
@@ -69,6 +71,8 @@ module.exports = {
         }),
 
         new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin),
+
+        new HtmlWebpackSkipAssetsPlugin(),
 
         new FileManagerPlugin({
             onEnd: [
