@@ -10372,20 +10372,26 @@ document.addEventListener("DOMContentLoaded", async function () {
   $(document.body).find("form#siteUrlForm input#siteUrl").val(windowData);
   let [dataUrl,, actorId] = windowData.split(/(\.json)(.+)/);
   dataUrl += ".json";
-  const dataJSON = await getJSON(dataUrl);
 
-  if (dataJSON[actorId] === undefined) {
-    notFoundError("Actor Not Found");
-    return;
+  try {
+    const dataJSON = await getJSON(dataUrl);
+
+    if (dataJSON[actorId] === undefined) {
+      notFoundError("Actor Not Found");
+      return;
+    }
+
+    const baseUrl = dataUrl.replace(/(\/)(?!.*\1).*\b\.json\b/, "").replace("actorAPI", "");
+    document.body.style.setProperty("--parchment", `url('${baseUrl}systems/dnd5e/ui/parchment.jpg')`);
+    document.body.style.setProperty("--denim", `url('${baseUrl}ui/denim.png')`);
+    document.body.style.setProperty("--d20-grey", `url('${baseUrl}icons/svg/d20-grey.svg')`);
+    document.body.style.setProperty("--d20-black", `url('${baseUrl}icons/svg/d20-black.svg')`);
+    let actorData = dataJSON[actorId];
+    Hooks.emit("showSheet", _handlebars_character_sheet_handlebars__WEBPACK_IMPORTED_MODULE_3___default.a, actorData, baseUrl);
+  } catch {
+    notFoundError("URL not found");
   }
 
-  const baseUrl = dataUrl.replace(/(\/)(?!.*\1).*\b\.json\b/, "").replace("actorAPI", "");
-  document.body.style.setProperty("--parchment", `url('${baseUrl}systems/dnd5e/ui/parchment.jpg')`);
-  document.body.style.setProperty("--denim", `url('${baseUrl}ui/denim.png')`);
-  document.body.style.setProperty("--d20-grey", `url('${baseUrl}icons/svg/d20-grey.svg')`);
-  document.body.style.setProperty("--d20-black", `url('${baseUrl}icons/svg/d20-black.svg')`);
-  let actorData = dataJSON[actorId];
-  Hooks.emit("showSheet", _handlebars_character_sheet_handlebars__WEBPACK_IMPORTED_MODULE_3___default.a, actorData, baseUrl);
   loadElement.remove();
 }); // onsubmit
 
@@ -10394,11 +10400,12 @@ $(document.body).find("form#siteUrlForm").on("submit", function (e) {
 });
 
 function getJSON(url) {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     $.ajax({
       dataType: "json",
       url: 'https://cors-anywhere.herokuapp.com/' + url,
-      success: data => resolve(data)
+      success: data => resolve(data),
+      error: () => reject()
     });
   });
 }

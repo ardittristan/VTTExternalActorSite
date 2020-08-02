@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     let [dataUrl, , actorId] = windowData.split(/(\.json)(.+)/);
     dataUrl += ".json";
 
+    try {
     const dataJSON = await getJSON(dataUrl);
 
     if (dataJSON[actorId] === undefined) {
@@ -45,6 +46,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     Hooks.emit("showSheet", sheetTemplate, actorData, baseUrl);
 
+    } catch {
+        notFoundError("URL not found");
+    }
+
     loadElement.remove();
 
 });
@@ -55,11 +60,12 @@ $(document.body).find("form#siteUrlForm").on("submit", function (e) {
 });
 
 function getJSON(url) {
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
         $.ajax({
             dataType: "json",
             url: 'https://cors-anywhere.herokuapp.com/' + url,
-            success: data => resolve(data)
+            success: data => resolve(data),
+            error: () => reject()
         });
     });
 }
