@@ -57,7 +57,7 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             inlineSource: '.(js|css)$',
-            excludeAssets: ['fontawesome.*.js'],
+            excludeAssets: ['fontawesome.js'],
             title: "5E Sheet",
             template: "./src/handlebars/index.hbs",
             minify: {
