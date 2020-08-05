@@ -13,7 +13,6 @@
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "@types/jquery": "^3.5.1",
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
@@ -35,7 +34,9 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env"
