@@ -765,9 +765,9 @@ function computeEncumbrance(totalWeight, data) {
     grg: 8
   }[data.actorData.data.traits.size] || 1; // Apply Powerful Build feat
 
-  if ((_data$actorData$data$ = data.actorData.data.flags) === null || _data$actorData$data$ === void 0 ? void 0 : (_data$actorData$data$2 = _data$actorData$data$.dnd5e) === null || _data$actorData$data$2 === void 0 ? void 0 : _data$actorData$data$2.powerfulBuild) mod = Math.min(mod * 2, 8); // Add Currency Weight
+  if ((_data$actorData$data$ = data.actorData.data.flags) !== null && _data$actorData$data$ !== void 0 && (_data$actorData$data$2 = _data$actorData$data$.dnd5e) !== null && _data$actorData$data$2 !== void 0 && _data$actorData$data$2.powerfulBuild) mod = Math.min(mod * 2, 8); // Add Currency Weight
 
-  if ((_data$actorData$data$3 = data.actorData.data.flags) === null || _data$actorData$data$3 === void 0 ? void 0 : (_data$actorData$data$4 = _data$actorData$data$3.externalactor) === null || _data$actorData$data$4 === void 0 ? void 0 : _data$actorData$data$4.currencyWeight) {
+  if ((_data$actorData$data$3 = data.actorData.data.flags) !== null && _data$actorData$data$3 !== void 0 && (_data$actorData$data$4 = _data$actorData$data$3.externalactor) !== null && _data$actorData$data$4 !== void 0 && _data$actorData$data$4.currencyWeight) {
     const currency = data.actorData.data.currency;
     const numCoins = Object.values(currency).reduce((val, denom) => val += denom, 0);
     totalWeight += numCoins / dnd5e.encumbrance.currencyPerWeight;

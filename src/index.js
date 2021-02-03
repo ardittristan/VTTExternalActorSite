@@ -63,7 +63,7 @@ function getJSON(url) {
     return new Promise((resolve, reject) => {
         $.ajax({
             dataType: "json",
-            url: 'https://cors-anywhere.herokuapp.com/' + url,
+            url: 'https://cors-anywhere.ardittristan.workers.dev/corsproxy/?apiurl=' + url,
             success: data => resolve(data),
             error: () => reject()
         });
